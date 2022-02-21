@@ -1,0 +1,211 @@
+{
+	"pages": [
+		[
+		  {
+				"renderType": "picture",
+				"image": {
+					"address": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfjVFMIrYuBCjRcgwimZiNJmD-H6ny28vV_6j_wNUhy-IVfDrAnPWRHnLT09ltwx9v0M:https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg&usqp=CAU"
+				},
+				"scale": {
+					"x": 1,
+					"y": 1,
+					"type": {
+						"coordinateType": "nonRaw",
+						"by": {
+							"x": 1,
+							"y": 1
+						}
+					}
+				},
+				"position": {
+					"x": 0,
+					"y": 0,
+					"type": {
+						"coordinateType": "raw"
+					}
+				}
+			},
+
+			{
+				"renderType": "richText",
+				"text": "{bold,italic,9px,Arial blah\n\r, {italic,14px,Arial blah}} blah",
+				"fill": "white",
+				"outline": "black",
+				"outlineWidth": "1",
+				"scale": {
+					"x": 0.25,
+					"y": 1,
+					"type": {
+						"coordinateType": "nonRaw",
+						"by": {
+							"x": 1,
+							"y": 1
+						}
+					}
+				},
+				"position": {
+					"x": 0,
+					"y": 0,
+					"type": {
+						"coordinateType": "raw"
+					}
+				}
+			},
+
+			{
+				"renderType": "shape",
+				"points": [{
+						"x": 0,
+						"y": 0,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 1,
+						"y": 0,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 1,
+						"y": 1,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 0,
+						"y": 1,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					}
+				],
+				"fill": "rgba(0, 0, 0, 0)",
+				"outline": "red",
+				"outlineWidth": 5
+			}
+		],
+		[{
+				"renderType": "picture",
+				"image": {
+					"address": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfjVFMIrYuBCjRcgwimZiNJmD-H6ny28vV_6j_wNUhy-IVfDrAnPWRHnLT09ltwx9v0M:https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg&usqp=CAU"
+				},
+				"scale": {
+					"x": 1,
+					"y": 1,
+					"type": {
+						"coordinateType": "nonRaw",
+						"by": {
+							"x": 1,
+							"y": 1
+						}
+					}
+				},
+				"position": {
+					"x": 0,
+					"y": 0,
+					"type": {
+						"coordinateType": "raw"
+					}
+				}
+			},
+
+			{
+				"renderType": "richText",
+				"text": "{bold,12px,Arial hey new file {bold,italic,18px,Arial interesting}}.",
+				"fill": "white",
+				"outline": "black",
+				"outlineWidth": "1",
+				"scale": {
+					"x": 0.25,
+					"y": 1,
+					"type": {
+						"coordinateType": "nonRaw",
+						"by": {
+							"x": 1,
+							"y": 1
+						}
+					}
+				},
+				"position": {
+					"x": 0,
+					"y": 0,
+					"type": {
+						"coordinateType": "raw"
+					}
+				}
+			},
+
+			{
+				"renderType": "shape",
+				"points": [{
+						"x": 0,
+						"y": 0,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 1,
+						"y": 0,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 1,
+						"y": 1,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					},
+					{
+						"x": 0,
+						"y": 1,
+						"type": {
+							"coordinateType": "nonRaw",
+							"by": {
+								"x": 1,
+								"y": 1
+							}
+						}
+					}
+				],
+				"fill": "rgba(0, 0, 0, 0)",
+				"outline": "red",
+				"outlineWidth": 5
+			}
+		]
+	]
+}

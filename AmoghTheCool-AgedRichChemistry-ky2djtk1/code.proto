@@ -1,0 +1,3 @@
+message SearchRequest {
+  required string query = 1;
+}

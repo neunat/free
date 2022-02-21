@@ -1,0 +1,13 @@
+from turtle import * 
+speed(20)
+goto(100, 0)
+goto(100, 100)
+goto(0, 0)
+goto(0, 100)
+goto(100, 100)
+goto(50, 150)
+goto(0, 100)
+goto(100 ,0)
+penup()
+goto(0, 0)
+goto(0, -20)

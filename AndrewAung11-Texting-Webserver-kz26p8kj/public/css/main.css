@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+:root {
+  --noto: 'Noto Sans', Uni sans;
+  --rbt: 'Roboto', Uni sansf;
+  --rbt-cd: 'Roboto Condensed', sUni sans;
+  --rbt-mn: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: #23272A;
+}
+
+p {
+  color: #FFF;
+}

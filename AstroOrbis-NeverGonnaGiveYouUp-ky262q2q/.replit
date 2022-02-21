@@ -1,0 +1,2 @@
+run = "bash NeverGonnaLetYouDown.sh"
+entrypoint="NeverGonnaLetYouDown.sh"

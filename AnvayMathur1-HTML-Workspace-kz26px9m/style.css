@@ -1,0 +1,31 @@
+.button {
+  background-size: 100%;
+  background-image: linear-gradient(#ffffff, #cccccc);
+  border-radius: 0.45rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 100;
+}
+.button:before {
+  border-radius: inherit;
+  background-image: linear-gradient(#cccccc, #ffffff);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  transition: opacity 0.45s;
+}
+.button:hover:before {
+  opacity: 1;
+}

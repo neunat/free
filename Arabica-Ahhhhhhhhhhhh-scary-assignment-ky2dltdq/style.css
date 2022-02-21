@@ -1,0 +1,11 @@
+tr {
+	border: black 1px;
+}
+
+.tableOddRow {
+	background-color: gray;
+}
+
+.tableEvenRow {
+	background-color: darkgray;
+}

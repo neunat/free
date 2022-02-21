@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+h3, h1 {
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+p, a {
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+h4, h2, h5, h6, div.col, .button, input, span, table, .gallery, label {
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
+}
+ul, ol {
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
+}
+#canvas-container {
+   width: 100%;
+   text-align:center;
+}
+
+canvas {
+   display: inline;
+}
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  /*margin-top: auto;
+  margin-bottom: auto;*/
+
+
+}
+
+
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb, .noUi-handle {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+/*pre {
+  //background-color: gainsboro;
+  }*/
+code.hljs { display: inline; }
+h4 {
+  text-align: center;
+}
+.innertoc {
+  white-space: pre;
+}
+.table {
+   width: 100%;
+   max-width: 100%;
+   border-collapse: collapse;
+   border-spacing: 0;
+   display: table;
+   table-layout: fixed;
+}
+td {
+	padding:3px;
+}
+.textCell {
+	width: 260px;
+}
+.numberCell {
+	width: 120px;
+}
+s1, s2 {
+  margin: 2px;
+}
+input[type=submit], input[type=button], button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Arvo', Arial, Helvetica, sans-serif;
+  width: 100%;
+  transition-duration: 0.4s;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 3px;
+  border-color: #4CAF50;
+}
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+  background-color: white;
+  color: black;
+}
+
+a.e {
+  color: black;
+  text-decoration: unset;
+}
+
+.edit {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color: rgb(76, 175, 80);
+  background-color: rgba(76, 175, 80, 0.5);
+  padding-left: 1px;
+  color: black;
+  text-decoration: unset;
+}
+
+.const {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color: rgb(175, 76, 76);
+  background-color: rgba(175, 76, 76, 0.5);
+  padding-left: 1px;
+}
+
+.calc {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color: rgb(171, 187, 28);
+  background-color: rgba(171, 187, 28, 0.5);
+  padding-left: 1px;
+}
+
+.c1 {
+  color: white;
+}
+
+.c2 {
+  color: white;
+}
+
+.s1:hover .c1 {
+  color: black;
+}
+
+.s1:hover .fa-play {
+    color: white;
+}  
+
+.s2:hover .c2 {
+  color: black;
+}
+
+.s2:hover .fa-pause {
+    color: white;
+}  
+.button {
+  width: 50%
+}
+
+#disease {
+  display: none;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+footer {
+  font-size: 1rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderc {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderc:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input[type=checkbox]:checked + .sliderc {
+  background-color: #4CAF50;
+}
+
+input[type=checkbox]:focus + .sliderc {
+  box-shadow: 0 0 1px #4CAF50;
+}
+
+input[type=checkbox]:checked + .sliderc:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderc.round {
+  border-radius: 34px;
+}
+
+.sliderc.round:before {
+  border-radius: 50%;
+}
+.disease-presets {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+/*
+table.fixed_header tbody{
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  height: 300px;
+}
+
+table.fixed_header tr.header {
+  display: block;
+  width: 100%;
+}
+table.fixed_header {
+  table-layout: fixed;
+}
+*/
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background-color: rgb(242,242,242);
+  border-bottom: 0px none rgb(33, 37, 41);
+}
+
+tr.header {
+  background-color: white !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}

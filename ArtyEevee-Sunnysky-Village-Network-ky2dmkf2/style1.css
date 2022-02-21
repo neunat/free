@@ -1,0 +1,14 @@
+body {
+  background-image: url('BG1.png');
+  background-size: fill;
+}
+
+
+ul {
+  list-style-type: none;
+  float: left;
+}
+
+a {
+  color: white;
+}
