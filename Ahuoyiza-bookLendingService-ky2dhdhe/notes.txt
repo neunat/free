@@ -1,0 +1,48 @@
+PRD
+1. have books: 
+2. categorise books [
+  ,
+  Finance
+  Technology,
+  Medical,
+  Sci-Fi,
+  Arts,
+  Romance,
+  ]
+2b. Book titles: {
+  Finance [
+    Against the Gods,
+    Permission Marketing,
+    Mastering Sales,
+    Accounting
+  ],
+  Technology: [
+    Data Structures,
+    Programming for dummies,
+    Discrete Mathematics,
+  ],
+  Medical: [
+    Nursing Diagnosis,
+    Family Medicine
+  ],
+  Sci-Fi:[
+    She who became the sun,
+    ZRT,
+  ],
+  Arts: [
+    Americana,
+    Iya Ore
+  ],
+  Romance:[
+    Black heat,
+    Home for Mel,
+    Switch,
+    Chasing Red,
+  ]
+}
+
+3. user can borrow book(s)
+4. user can return book(s)
+5. user can donate book(s)
+6. user can view books borrowed
+7. 

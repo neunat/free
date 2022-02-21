@@ -1,0 +1,13 @@
+# compile = ["./gradlew", "build"]
+run = ["./gradlew", "run"]
+
+entrypoint = "src/main/scala/dev/gabrieljones/App.scala"
+
+[languages.scala]
+pattern = "**/*.scala"
+
+[languages.scala.languageServer]
+start = ["metals"]
+
+[nix]
+channel = "stable-21_11"

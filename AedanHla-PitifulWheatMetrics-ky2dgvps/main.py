@@ -1,0 +1,10 @@
+reddit=[1,2,3,4,5,6,7,8,9,56]
+new=[]
+new.append(reddit[0])
+print(new)
+#new.append(len(reddit))
+#print(new)
+#new.append(reddit[len(reddit)-1])
+#print(new)
+new.append(reddit[-1])
+print(new)
