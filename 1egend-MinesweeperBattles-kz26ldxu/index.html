@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Minesweeper, Battles, Minesweeper Battles, Mine, Sweeper, Sweeper Battles, Mine Battles">
+    <meta name="author" content="1egend and TheCelestialCube">
+    <meta name="description" content="2 player online Minesweeper battles!">
+
+    <!-- OG Meta Tags for Social Media Queries --> 
+    <meta property="og:title" content="Minesweeper Battles"/> 
+    <meta property="og:image" content="https://raw.githubusercontent.com/1e9end/minesweeper-battles/master/assets/favicon.png"/>
+    <meta property="og:description" content="Intense online multiplayer Minesweeper battles!" /> 
+    <meta property="og:url" content= "https://minesweeper.1egend.repl.co"/> 
+    <meta property="og:type" content="website"/>
+
+    <title>Minesweeper Battles</title>
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png"/>
+    <!-- Google fonts, jQuery, Socket.io -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "/socket.io/socket.io.js"></script>
+
+    <!-- P5.js GUI Library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src = "main.js" defer></script>
+    <style>
+        body{
+            overflow: hidden;
+            font-family: calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+
+        #bg{
+          position: absolute;
+          width: 200vmax;
+          height: 200vmax;
+          background-image: url("./assets/background.png");
+          background-repeat: repeat;
+          transform: translate(calc(50vw - 100vmax), calc(50vh - 100vmax)) rotate(-30deg);
+        }
+
+        .v-center{
+            display: block;
+            position: relative; 
+            top: 50%; 
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        canvas{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        #menu {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        #menu button{
+          background-color: #4CAF50;
+          margin-top: 5px;
+          border: none;
+          color: white;
+          padding: 10px 25px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+        }
+
+        #menu button:hover{
+          background-color: #4C9F50;
+          margin-top: 5px;
+          border: none;
+          color: white;
+          padding: 10px 25px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+        }
+
+        #logo {
+          display: block;
+          margin: auto;
+          width: 100%;
+        }
+
+        #roomInput {
+          width: max(20vw, 325px);
+          padding: 10px;
+          text-align: center;
+          margin: auto;
+        }
+
+        #media-links {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          padding: 10px;
+          float: left;
+        }
+
+        #media-links img{
+          padding: 5px;
+          width: max(32px, 2vw);
+        }
+
+        #media-links img:hover{
+          border-radius: 15px;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        #description {
+          position: absolute;
+          right: 10px;
+          width: 20%;
+          height: 50vh;
+          top: 50%; 
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 15px;
+          overflow-y: auto;
+        }
+
+        #copyright, #version{
+            position: absolute;
+            bottom: 0px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #copyright {left: 0px;}
+        #version {right: 0px;}
+
+        #snackbar {
+          visibility: hidden; 
+          min-width: 250px; /* default minimum width */
+          margin-left: -125px; /* - (min-width)/2 */
+          background-color: #333; 
+          color: #fff; 
+          text-align: center; 
+          border-radius: 2px; 
+          padding: 16px; 
+          position: fixed; 
+          z-index: 1;
+          left: 50%; 
+          bottom: 30px; 
+        }
+
+        /* Show snackbar */
+        #snackbar.show {
+          visibility: visible;
+          -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+          animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+          from {bottom: 0; opacity: 0;}
+          to {bottom: 30px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+          from {bottom: 0; opacity: 0;}
+          to {bottom: 30px; opacity: 1;}
+        }
+
+        @-webkit-keyframes fadeout {
+          from {bottom: 30px; opacity: 1;}
+          to {bottom: 0; opacity: 0;}
+        }
+
+        @keyframes fadeout {
+          from {bottom: 30px; opacity: 1;}
+          to {bottom: 0; opacity: 0;}
+        } 
+
+        @media only screen and (max-width: 1000px) {
+          #description {
+            text-align: center;
+            right: initial;
+            bottom: 10px;
+            padding: 10px;
+            width: calc(100vw - 20px);
+            height: 20vh;
+
+            top: initial; 
+            -ms-transform: initial;
+            -webkit-transform: initial;
+            transform: initial;
+          }
+          #media-links{
+            display: none;
+          }
+          #copyright, #version{
+            position: absolute;
+            bottom: initial;
+            top: 0px;
+            padding: 5px;
+            text-align: center;
+          }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div id = "bg"></div>
+    <canvas id = "canvas"></canvas>
+    <div id = "menu">
+      <img src = "./assets/logo.png" id="logo"><br>
+      <input type="text" id="roomInput" name="roomInput" placeholder="Enter room code (Leave blank for random matchmaking)"><br>
+      <button onclick="matchMake()">Join</button>
+      <button onclick="makeRoom()">Create a room</button>
+    </div>
+    <div id = "media-links">
+      <a href="https://github.com/1e9end/minesweeper-battles"><img src = "https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/github.svg"></a>
+    </div>
+    <div id = "description">
+      <b>Welcome to Minesweeper Battles!</b><br> 
+      A classic game of minesweeper but with 2 players facing off. A patch will be automatically revealed upon game start to reduce luck factors.<br><br>
+
+      <b>Minesweeper Rules:</b> <br>
+      - Each square will either be blank, a number, or a mine <br>
+      - Left click to reveal a tile, right click to flag a tile <br>
+      - You win when all of the mines are flagged (40) <br>
+      - The number on a tile represents the number of bombs adjacent to that tile, vertically, horizontally, and diagonally (blank is zero) <br>
+      - If you reveal a square that is a mine, your board will get frozen for 15 seconds <br><br>
+
+      <b>Joining a game: </b><br>
+      You can either create or join a public room or a private room. <br>
+      Pressing <em>Join</em> without entering a room code will automatically put you into online matchmaking with a random stranger on the internet. <br> <br>
+      <b>Create a private game</b> <br>
+      Alternatively, if you want to play with your friends, you can enter a private room. <br> 
+      Each private room has an individual code, which other people need to join. <br>
+      Create a private room by pressing <em>Create a room</em>, and then share the room code with your friends so they can join. <br><br>
+      To join a room simply enter the room code into the search bar, and click <em>Join</em>. <br><br>
+
+      <b>How to play:</b><br><br>
+      After the game starts, you will play on the board on the left. You and your opponent play identical games. <br> <br>
+
+      <b>Green tiles</b><br>
+      You'll be able to see your opponent's progress on the right through green tiles. <br> 
+      Each tile that they reveal and each mine that they flag will be green, the rest will be grey. <br>
+      This can help you, but it can also distract you from your own board, so use it wisely. You can also see how many flags your opponent has placed. <br>
+      <b>❄Freeze!❄</b><br>
+      If you reveal a mine, don't worry, it's not game over. A 15 second penalty and you're back into the game. <br>
+      <b>Winning</b><br>
+      The game ends when one player flags all the mines, or if a player disconnects. After a game is finished you'll be able to join another game.
+    </div>
+    <div id = "copyright">© 2021, 1egend and TheCelestialCube</div>
+    <div id = "version">v1.0.0</div>
+    <div id= "snackbar">69</div>
+    <!-- 
+        Hello there!
+
+        <div id = "footer">
+        Made with 💖 by <a href="https://1e9end.github.io/">1egend</a> and TheCelestialCube 
+        </div>
+    -->
+</body>
+</html>

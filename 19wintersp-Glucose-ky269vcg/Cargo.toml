@@ -1,0 +1,9 @@
+[package]
+name = "glucose-cli"
+version = "0.1.0"
+authors = [ "Patrick Winters <19wintersp@gmail.com>" ]
+edition = "2018"
+
+[dependencies]
+glucose = { path = "glucose/" }
+image = "0.23.14"

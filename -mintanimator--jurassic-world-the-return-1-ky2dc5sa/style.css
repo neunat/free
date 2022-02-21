@@ -1,0 +1,32 @@
+body {
+	background: url('downloads/background.png'); /* DON'T DO SPACES IN YOUR FILE!!! */
+	color: White;
+	font-family: fantasy, sans-serif;
+	text-align: center;
+}
+
+a:-webkit-any-link {
+	/* Do you hate the blue and underlined a? I can solve it! */
+	text-decoration: none;
+	color: White;
+}
+
+p {
+	font-size: 26px;
+}
+
+p.button {
+	background-color: DarkBlue; /* You can change those colors, too */
+	border: 4px outset CornflowerBlue;
+	display: inline-block;
+	padding: 1px 8px;
+	cursor: pointer;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+p:active.button {
+	cursor: default;
+	font-size: 20px;
+	margin-top: 20px;
+}

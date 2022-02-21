@@ -1,0 +1,7 @@
+[package]
+name = "glucose"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+bit_manager = "0.5.3"

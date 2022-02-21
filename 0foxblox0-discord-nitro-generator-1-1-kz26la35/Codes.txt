@@ -1,0 +1,8 @@
+password5 = ''
+specialChars3 = ("[]\{|}")
+for i in range(int(length))
+  randChar = random.choice (lowercase + uppercase + )
+Lu9DEEqKVmJ0PN6Yw
+L23ZsmPyT34qXzfWb
+LP99eix6q8efQT1Di
+L6kjNmXve1Yr8JlHh
