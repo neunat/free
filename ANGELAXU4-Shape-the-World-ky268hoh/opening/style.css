@@ -1,0 +1,41 @@
+body{
+background-color:rgb(101, 89, 179);
+padding: 16px 14px;
+}
+.CI{
+  color:rgba(0, 0, 0, 0.814);
+  text-align: center;
+  text-justify: auto;
+  padding: inherit;
+  display: inline-block;
+  font-size: 20px;
+}
+.CH{
+  height: 32px;
+  color: rgba(52, 169, 79, 0.69);
+  text-align: center; 
+  flex-flow: inherit;
+  font-size: 25px;
+}
+button {
+  padding: 12px 22px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(250, 221, 55);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px rgb(114, 206, 248);
+}
+
+button:hover {background-color: rgb(180, 121, 235)}
+
+button:active {
+  background-color: rgb(250, 221, 55);
+  box-shadow: 0 5px rgb(180, 121, 235);
+  transform: translateY(4px);
+}
+
+

@@ -1,0 +1,25 @@
+TARGET = Some("x86_64-unknown-none")
+OPT_LEVEL = Some("3")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_x86_64-unknown-none = None
+CC_x86_64_unknown_none = None
+TARGET_CC = None
+CC = Some("clang")
+CFLAGS_x86_64-unknown-none = None
+CFLAGS_x86_64_unknown_none = None
+TARGET_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("false")
+running: "clang" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "--target=x86_64-unknown-none" "-I" "src/ssfn" "-Wall" "-Wextra" "-msoft-float" "-ffreestanding" "-nostdlib" "-mkernel" "-c" "-o" "/home/runner/Os/kernel/target/x86_64-unknown-none/release/build/kernel-fb0fc593da3b0915/out/src/ssfn/ssfn.o" "-c" "src/ssfn/ssfn.c"
+exit status: 0
+AR_x86_64-unknown-none = None
+AR_x86_64_unknown_none = None
+TARGET_AR = None
+AR = Some("ar")
+running: "ar" "cq" "/home/runner/Os/kernel/target/x86_64-unknown-none/release/build/kernel-fb0fc593da3b0915/out/libssfn.a" "/home/runner/Os/kernel/target/x86_64-unknown-none/release/build/kernel-fb0fc593da3b0915/out/src/ssfn/ssfn.o"
+exit status: 0
+running: "ar" "s" "/home/runner/Os/kernel/target/x86_64-unknown-none/release/build/kernel-fb0fc593da3b0915/out/libssfn.a"
+exit status: 0
+cargo:rustc-link-lib=static=ssfn
+cargo:rustc-link-search=native=/home/runner/Os/kernel/target/x86_64-unknown-none/release/build/kernel-fb0fc593da3b0915/out

@@ -1,0 +1,22 @@
+body{
+  
+  background-image: url('https://lh3.googleusercontent.com/gb_pY7SU9zfRdNvd2q2Yz5AhmXtwR6VO7DQN62m0tVKz1OB3VBLEhAmSu4Rhagt9R0nfufXiuv-F3tXUhO3kX3j8MO5ufVKPlBJFWOTbe0rIBfDH2O8Eds6RIEsLOOjB7lDtdl0u9BFpWixSa872JaeqAZ9shAkRJMmjE_b-AlSN1lNE4QgbopSHAXALtA0nRejh0ivCMqa1_WfDxm1rTWrAo3-t7DfKV5BKe-XOtogSwzFK_zEyobXBN0To3YHBz9QO4bo7V341SK2o2Ceh9ke4jOXzzs5pKrDI-x7xj9qTdrwOOEvtLNxyCNh41yxybcrSR9fo2c1AZ4SjzzLAuIKV_VeRMTzYLOwTUai5h-g5gaPshFUHanbZqRfweuar54Bw3t7Oj5L2wobkWaoDmD6GhHPxgxt-EYifhkQOFCmMcQdRQnkOHJAs6F8sXWjsvMc_A2gTWX95VFT9-qlx4hpa5U3sSH5JwsbUNXkjiBEwpNfDOAJwbjhzqJUUvDXakqsaNwflWKCPwY13KLKJLeWWOT5nUhEs5jGdfqdA3VXTjQsP3FSEXKLVtdTDBEHJpWIG-APxDuP4Dym3ZRaNzJYCRArxhKF11_SyUrr8KP7ubKUPTwXsJcIxUFh5rAScGOzhLbBY693YzJgWVff6ZHUITrKdE6rnMwZ--qxXDmcENqVbQ6DcOdogeBUJvUVIUax6qV6j272uJAXisxdinSf1=w251-h168-no?authuser=0');
+  height: 800px; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+  background-size: cover; 
+  text-align:center;
+}
+
+.p{
+ font-family: Bonheur Royale ;
+ font-size: 40px;
+ font-weight: bolder;
+}
+
+marquee{
+  height:40px;
+  font-size: 30px;
+  font-family: Bonheur Royale;
+  font-weight: bolder; 
+}

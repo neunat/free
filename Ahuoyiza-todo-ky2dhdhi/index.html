@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/568c011d87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="add box" >
+            <div class="add-bar"></div>
+            <div>
+                <h3>Add Task</h3>
+                
+                <input id="text" type="text">
+                 <input type="hidden" id="saveIndex">
+                <button id="add-task-button" class="add-button"><i class="fas fa-plus"></i></button>
+                 <button class="edit" id="save-todo-btn" >Edit</button>
+            </div>
+        </section>
+        <section class='todo box' >
+            <div class="add-bar blue"></div>
+            <div>
+                <h3>ToDo</h3>
+            <div id="listBox">
+            </div>
+            </div>
+        </section>
+        <section class="comp box">
+            <div class="add-bar green"></div>
+            <div>
+            <h3>Completed Tasks</h3>
+           <div id="completed-tasks">
+            
+           </div>
+            </div>  
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

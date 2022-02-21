@@ -1,0 +1,2 @@
+[target.x86_64-unknown-elf]
+rustflags = "-Ccode-model=kernel --emit=asm --extern core=../core/target/x86_64-unknown-elf/release/libcore.rlib"

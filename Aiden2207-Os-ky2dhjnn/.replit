@@ -1,0 +1,23 @@
+run = """rustup default nightly &&\
+  cd core &&\
+  RUSTFLAGS="-Cembed-bitcode=y" cargo build -Z unstable-options --out-dir=../libcore --release --target=x86_64-unknown-none&&\
+  cd ../kernel &&\
+  CC=clang cargo build --release &&\
+  cd .. &&\
+  cp -f kernel/target/x86_64-unknown-none/release/kernel initrd/sys/core/my-project&&\
+  ./mkbootimg bootboot.json my-project.img &&\
+  qemu-system-x86_64 -full-screen -drive file=my-project.img,format=raw"""
+
+entrypoint = "kernel/src/main.rs"
+
+[packager]
+language = "rust"
+
+[packager.features]
+packageSearch = true
+
+[languages.rust]
+pattern = "**/*.rs"
+
+[languages.rust.languageServer]
+start = "rust-analyzer"

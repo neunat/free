@@ -1,0 +1,16 @@
+body{
+ text-align: center;
+ background-color: black;
+ color: red;
+ font-family: "Consolas";
+}
+a{
+ color: red;
+ font-size: 100px;
+}
+button{
+ font-family: "Consolas";
+ color: red;
+ width: 100px;
+ height: 100px;
+}
