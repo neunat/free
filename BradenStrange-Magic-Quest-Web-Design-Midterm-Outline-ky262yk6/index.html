@@ -1,0 +1,75 @@
+<!-- 
+  Mission 1: Continue in "style.css"
+  Mission 2: Create an <h1> tag with the text  "Disney Codeillusion Cafe" (L22)
+  Mission 3-5: Continue in "style.css"
+  Mission 6: Add an image to the site with the "item" and "border" class and source from "assets/hotchocolate.jpg" (L56) 
+  Mission 7: The paragraph in the About Us section is to large. Use a special tag to add a break between the two paragraphs (L64)
+  Mission 8-10: Continue in "style.css"
+  Mission 11: Create a button with the label, "Show", that runs a function named "changeToSandwich()" when clicked (L52)
+  Mission 12-13: Continue in "script.js"
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Disney Codeillusion Cafe</h1>
+    </header>
+    
+    <div class="menu border">
+      <h2>Our Menu</h2>
+      <h3>Hot Drinks</h3>
+      <p>
+        Hot Chocolate
+        <button onclick='changeToHotChocolate()'>Show</button>
+      </p>
+      <p>
+        Espresso
+        <button onclick='changeToEspresso()'>Show</button>
+      </p>
+      <h3>Iced Coffee</h3>
+      <p>
+        Iced Americano
+        <button onclick='changeToIcedAmericano()'>Show</button>
+      </p>
+      <h3>Desserts</h3>
+      <p>
+        Cupcake
+        <button onclick='changeToCupcake()'>Show</button>
+      </p>
+      <p>
+        Brownies
+        <button onclick='changeToBrownies()'>Show</button>
+      </p>
+      <h3>Food</h3>
+      <p>
+        Sandwich
+<button onclick='changeToSandwich()'>Show</button>
+  
+      </p>
+      </div>
+
+<img class="item border"src="assets/hotchocolate.jpg"/>
+
+    <img class="photo border" src="assets/chef.png" />
+    <div class="description border">
+      <h2>About Us</h2>
+      <p>
+      <br> We serve the finest coffee beans in London, in one of the most beautiful buildings in the whole of Europe. Our focus is on quality, and we don't just produce great coffee. We are the best of the best in London.</br>
+        
+        
+
+        Our focus is on quality and we won't compromise on this. We are committed to delivering the best coffee possible, and we use the finest equipment and products available to deliver this to you. Our first priority is to deliver the best coffee possible to you, for the best price.
+      </p>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

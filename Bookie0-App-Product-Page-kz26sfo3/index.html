@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Name</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+		<div id="out">
+			<div class="nav" id="nav">
+				<h3 id="name"><a href="#landing" class="name">App Name</a></h3>
+				
+				<div class="links" id="links">
+					<a href="#features" class="nav-link"><span>FEATURES</span></a>
+					<a href="#about" class="nav-link"><span>ABOUT</span></a>
+					<a href="#plans" class="nav-link"><span>PLANS</span></a>
+					<a href="#contact" class="nav-link"><span>CONTACT</span></a>
+				</div>
+
+				<div class="buttons" id="buttons">
+					<button class="secondary nav-button">LEARN MORE</button>
+					<a href="signUp.html">
+						<button class="cta nav-button">DEMO</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<button class="close" id="close" onclick="show();">
+			<div class="line" id="top"></div>
+			<div class="line" id="bottom"></div>
+		</button>
+
+		<section class="landing" id="landing">
+			<div class="text">
+				<h1>App Name makes everything easier.</h1>	
+
+				<p class="subtitle">The all-in-one app that transforms your business and makes everything, well, <span class="accent">easy</span>!</p>		
+
+				<div class="buttons">
+					<button class="secondary">LEARN MORE</button>
+
+					<a href="signUp.html">
+						<button class="cta">DEMO</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="image">
+				<img src="phone.png">
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<h3>All you need to make your life easier</h3>
+
+			<div class="features-container">
+				<div class="feature">
+					<ion-icon name="people"></ion-icon>
+
+					<h4>MULTIPLAYER</h4>
+
+					<p class="subtitle">With multiplayer, you and your team can collaborate seamlessly. Leave comments, create threads, and organize who does what easily.</p>
+				</div>
+
+				<div class="feature">
+					<ion-icon name="analytics"></ion-icon>
+
+					<h4>ANALYTICS</h4>
+
+					<p class="subtitle">Detailed and complex analytics help you track everything from sales to users to reviews and even bugs!</p>
+				</div>
+
+				<div class="feature">
+					<ion-icon name="videocam"></ion-icon>
+
+					<h4>VIDEO CONFERENCING</h4>
+
+					<p class="subtitle">Meeting has never been made easier! Simply start a meeting, share the link, and you’ll be able to discuss plans, send files, or share your screen!</p>
+				</div>
+			</div>
+
+			<button>LEARN MORE</button>
+		</section>
+
+		<section class="demo" id="demo">
+			<h3>The perfect tool adapted to any team size</h3>
+
+			<p class="subtitle">Create your start-up or expand your business with us.</p>
+
+			<img src="computer.png">
+		</section>
+
+		<section class="about" id="about">
+			<div class="image">
+				<img src="desktop.png">
+			</div>
+
+			<div class="text">
+				<h3>About us</h3>
+
+				<p class="subtitle">When we first started our own business, we had a hard time finding the right tools. That’s why we created App Name, to help and your team work better, more efficiently, and easier.</p>
+
+				<p class="subtitle">We care deeply about your success, and we hope that with our app you can manage to be as innovative as ever!</p>
+			</div>			
+		</section>
+
+		<section class="plans" id="plans">
+			<h3>Plans</h3>
+
+			<p class="subtitle">Create your start-up or expand your business with us.</p>
+
+			<div class="plans-container">
+				<div class="plan">
+					<h4>STARTER</h4>
+
+					<ion-icon name="person" class="starter"></ion-icon>
+
+					<h1><span class="dollar-sign">$</span>3.99<span class="month">/mo</span></h1>
+
+					<p class="subtitle plan-description">Just starting</p>
+
+					<button>SELECT PLAN</button>
+
+					<div class="bottom">
+						<div class="column">
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>10 users</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>5gb storage</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>3 domains</p>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>Basic security</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="close-circle" class="cross"></ion-icon>
+
+								<p>24/7 support</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="close-circle" class="cross"></ion-icon>
+
+								<p>Mailboxes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="plan">
+					<h4>PRO</h4>
+
+					<ion-icon name="rocket" class="pro"></ion-icon>
+
+					<h1><span class="dollar-sign">$</span>9.99<span class="month">/mo</span></h1>
+
+					<p class="subtitle plan-description">Businesses</p>
+
+					<button>SELECT PLAN</button>
+
+					<div class="bottom">
+						<div class="column">
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>10 users</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>5gb storage</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>3 domains</p>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>Basic security</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>24/7 support</p>
+							</div>
+
+							<div class="feature">
+								<ion-icon name="checkmark-circle" class="checkmark"></ion-icon>
+
+								<p>Mailboxes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="text">
+				<h3>Questions?</h3>
+
+				<p class="subtitle">Fill out the form and get in touch!</p>
+
+				<div class="info-container">
+					<div class="address">
+						<ion-icon name="home"></ion-icon>
+
+						<p class="subtitle"><span class="accent">69 Product Lane, Product City, PS 12345</span></p>
+					</div>
+
+					<div class="number">
+						<ion-icon name="call"></ion-icon>
+				
+						<p class="subtitle"><span class="accent">+123 546 7890</span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="form">
+				<div class="name">
+					<input type="text" placeholder="First name" autocomplete="off" autofill="off">
+
+					<input type="text" placeholder="Last name" autocomplete="off" autofill="off">
+				</div>
+
+				<input type="text" placeholder="Email" autocomplete="off" autofill="off" class="email">
+
+				<textarea placeholder="Message" autocomplete="off" autofill="off" class="message"></textarea>
+
+				<button class="small">SUBMIT</button>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="column left">
+				<h1>App Name</h1>
+
+				<p class="subtitle">The all-in-one app that transforms your business and makes everything, well, <span class="accent">easy</span>!</p>
+
+				<div class="icons-container">
+					<button class="icon">
+						<ion-icon name="logo-twitter"></ion-icon>
+					</button>		
+
+					<button class="icon">
+						<ion-icon name="logo-facebook"></ion-icon>
+					</button>
+
+					<button class="icon">
+						<ion-icon name="logo-youtube"></ion-icon>
+					</button>
+
+					<button class="icon">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</button>
+				</div>
+			</div>
+
+			<div class="column">
+				<p>Useful links</p>
+
+				<a href="https://app-product-page.bookie0.repl.co/"><span>HOME</span></a>
+
+				<a href="https://app-product-page.bookie0.repl.co/#features"><span>FEATURES</span></a>
+
+				<a href="https://app-product-page.bookie0.repl.co/#about"><span>ABOUT</span></a>
+
+				<a href="https://app-product-page.bookie0.repl.co/#plans"><span>PLANS</span></a>
+
+				<a href="https://app-product-page.bookie0.repl.co/#contact"><span>CONTACT</span></a>
+			</div>
+
+			<div class="column">
+				<p>Other</p>
+
+				<a href=""><span>TERMS AND CONDITIONS</span></a>
+
+				<a href=""><span>PRIVACY POLICY</span></a>
+			</div>
+
+			<div class="column right">
+				<p>Sign up for our newsletter</p>
+
+				<p class="subtitle">Receive important updates about how our product is doing.</p>
+
+				<input type="text" placeholder="Email">
+
+				<button class="small">I'M IN!</button>
+			</div>
+		</section>
+
+    <script src="script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
+<style>
+
+
+</style>

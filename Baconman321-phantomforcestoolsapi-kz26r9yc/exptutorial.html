@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            text-align:center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Exp calculator api tutorial</title>
+</head>
+<body>
+    <p>The Experience points calculator is basically the tool on the website, except that it can be called with ajax. The tool available on the website <i>can</i> be called, but it gives a message instead of a number, making it harder with calculations. The API only gives you a number, making it much easier to use.</p>
+    <p>The ajax call would be a GET request, so the query looks like this: </p><pre>https://phantomforcestoolsapi.baconman321.repl.co/exp.php?c_rank=yourCurrentRankHere&amp;w_rank=yourWantedRankHere</pre>
+    <p>The "yourCurrentRankHere" and "yourWantedRankHere" obviously are just examples. You enter in the current rank you have for the first query and your rank that you want to achieve The results can give back two things: The amount of experience points you need to achieve the wanted rank you entered in (e.g: 14000) or invalid. If it's invalid, you either entered in a wanted rank below your current rank (eg: c_rank was 5 and w_rank was 1) because obviously you can't move down ranks OR if you entered in nothing for either c_rank, w_rank, or both.</p>
+</body>
+</html>

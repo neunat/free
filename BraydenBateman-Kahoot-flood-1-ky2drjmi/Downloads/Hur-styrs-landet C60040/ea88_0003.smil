@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="C60040"/>
+		<meta name="dc:title" content="Hur styrs landet?"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Information om talboken"/>
+		<meta name="ncc:totalElapsedTime" content="00:00:35"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:16"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.28"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="16.17s">
+			<par endsync="last" id="rgn_par_0003_0001">
+				<text src="ncc.html#text_0108" id="text_0108"/>
+				<seq>
+					<audio src="ea88_0003.mp3" clip-begin="npt=0.000s" clip-end="npt=2.325s" id="rgn_aud_0003_0001"/>
+					<audio src="ea88_0003.mp3" clip-begin="npt=2.325s" clip-end="npt=5.773s" id="rgn_aud_0003_0002"/>
+					<audio src="ea88_0003.mp3" clip-begin="npt=5.773s" clip-end="npt=9.273s" id="rgn_aud_0003_0003"/>
+					<audio src="ea88_0003.mp3" clip-begin="npt=9.273s" clip-end="npt=12.878s" id="rgn_aud_0003_0004"/>
+					<audio src="ea88_0003.mp3" clip-begin="npt=12.878s" clip-end="npt=16.170s" id="rgn_aud_0003_0005"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

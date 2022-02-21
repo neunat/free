@@ -1,0 +1,2 @@
+language = "cpp"
+run = "g++ classes.cpp -o bin && ./bin"

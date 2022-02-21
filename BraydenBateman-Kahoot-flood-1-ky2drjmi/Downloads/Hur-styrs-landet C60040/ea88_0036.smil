@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="C60040"/>
+		<meta name="dc:title" content="Hur styrs landet?"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Undersektion"/>
+		<meta name="ncc:totalElapsedTime" content="02:39:38"/>
+		<meta name="ncc:timeInThisSmil" content="00:04:48"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.28"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="288.364s">
+			<par endsync="last" id="rgn_par_0036_0001">
+				<text src="ncc.html#text_0128" id="text_0128"/>
+				<seq>
+					<audio src="ea88_0036.mp3" clip-begin="npt=0.000s" clip-end="npt=1.989s" id="rgn_aud_0036_0001"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=1.989s" clip-end="npt=6.822s" id="rgn_aud_0036_0002"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=6.822s" clip-end="npt=10.926s" id="rgn_aud_0036_0003"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=10.926s" clip-end="npt=17.980s" id="rgn_aud_0036_0004"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=17.980s" clip-end="npt=20.850s" id="rgn_aud_0036_0005"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=20.850s" clip-end="npt=25.268s" id="rgn_aud_0036_0006"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=25.268s" clip-end="npt=27.645s" id="rgn_aud_0036_0007"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=27.645s" clip-end="npt=35.975s" id="rgn_aud_0036_0008"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=35.975s" clip-end="npt=39.320s" id="rgn_aud_0036_0009"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=39.320s" clip-end="npt=49.771s" id="rgn_aud_0036_0010"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=49.771s" clip-end="npt=55.149s" id="rgn_aud_0036_0011"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=55.149s" clip-end="npt=58.365s" id="rgn_aud_0036_0012"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=58.365s" clip-end="npt=67.792s" id="rgn_aud_0036_0013"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=67.792s" clip-end="npt=70.456s" id="rgn_aud_0036_0014"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=70.456s" clip-end="npt=75.733s" id="rgn_aud_0036_0015"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=75.733s" clip-end="npt=79.183s" id="rgn_aud_0036_0016"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=79.183s" clip-end="npt=80.539s" id="rgn_aud_0036_0017"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=80.539s" clip-end="npt=82.030s" id="rgn_aud_0036_0018"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=82.030s" clip-end="npt=84.953s" id="rgn_aud_0036_0019"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=84.953s" clip-end="npt=90.337s" id="rgn_aud_0036_0020"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=90.337s" clip-end="npt=93.549s" id="rgn_aud_0036_0021"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=93.549s" clip-end="npt=97.468s" id="rgn_aud_0036_0022"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=97.468s" clip-end="npt=101.334s" id="rgn_aud_0036_0023"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=101.334s" clip-end="npt=107.001s" id="rgn_aud_0036_0024"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=107.001s" clip-end="npt=112.384s" id="rgn_aud_0036_0025"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=112.384s" clip-end="npt=115.098s" id="rgn_aud_0036_0026"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=115.098s" clip-end="npt=117.295s" id="rgn_aud_0036_0027"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=117.295s" clip-end="npt=121.684s" id="rgn_aud_0036_0028"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=121.684s" clip-end="npt=128.267s" id="rgn_aud_0036_0029"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=128.267s" clip-end="npt=133.097s" id="rgn_aud_0036_0030"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=133.097s" clip-end="npt=139.107s" id="rgn_aud_0036_0031"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=139.107s" clip-end="npt=141.848s" id="rgn_aud_0036_0032"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=141.848s" clip-end="npt=144.617s" id="rgn_aud_0036_0033"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=144.617s" clip-end="npt=152.271s" id="rgn_aud_0036_0034"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=152.271s" clip-end="npt=156.271s" id="rgn_aud_0036_0035"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=156.271s" clip-end="npt=165.071s" id="rgn_aud_0036_0036"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=165.071s" clip-end="npt=172.885s" id="rgn_aud_0036_0037"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=172.885s" clip-end="npt=178.263s" id="rgn_aud_0036_0038"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=178.263s" clip-end="npt=183.752s" id="rgn_aud_0036_0039"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=183.752s" clip-end="npt=192.319s" id="rgn_aud_0036_0040"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=192.319s" clip-end="npt=199.713s" id="rgn_aud_0036_0041"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=199.713s" clip-end="npt=202.348s" id="rgn_aud_0036_0042"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=202.348s" clip-end="npt=207.416s" id="rgn_aud_0036_0043"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=207.416s" clip-end="npt=211.465s" id="rgn_aud_0036_0044"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=211.465s" clip-end="npt=214.733s" id="rgn_aud_0036_0045"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=214.733s" clip-end="npt=218.936s" id="rgn_aud_0036_0046"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=218.936s" clip-end="npt=222.492s" id="rgn_aud_0036_0047"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=222.492s" clip-end="npt=227.975s" id="rgn_aud_0036_0048"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=227.975s" clip-end="npt=234.038s" id="rgn_aud_0036_0049"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=234.038s" clip-end="npt=240.435s" id="rgn_aud_0036_0050"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=240.435s" clip-end="npt=249.473s" id="rgn_aud_0036_0051"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=249.473s" clip-end="npt=258.488s" id="rgn_aud_0036_0052"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=258.488s" clip-end="npt=267.605s" id="rgn_aud_0036_0053"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=267.605s" clip-end="npt=275.729s" id="rgn_aud_0036_0054"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=275.729s" clip-end="npt=279.856s" id="rgn_aud_0036_0055"/>
+					<audio src="ea88_0036.mp3" clip-begin="npt=279.856s" clip-end="npt=288.364s" id="rgn_aud_0036_0056"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

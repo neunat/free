@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="C60040"/>
+		<meta name="dc:title" content="Hur styrs landet?"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Sektion"/>
+		<meta name="ncc:totalElapsedTime" content="00:00:51"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:19"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.28"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="18.608s">
+			<par endsync="last" id="rgn_par_0004_0001">
+				<text src="ncc.html#text_010f" id="text_010f"/>
+				<seq>
+					<audio src="ea88_0004.mp3" clip-begin="npt=0.000s" clip-end="npt=2.742s" id="rgn_aud_0004_0001"/>
+					<audio src="ea88_0004.mp3" clip-begin="npt=2.742s" clip-end="npt=6.867s" id="rgn_aud_0004_0002"/>
+					<audio src="ea88_0004.mp3" clip-begin="npt=6.867s" clip-end="npt=8.983s" id="rgn_aud_0004_0003"/>
+					<audio src="ea88_0004.mp3" clip-begin="npt=8.983s" clip-end="npt=11.022s" id="rgn_aud_0004_0004"/>
+					<audio src="ea88_0004.mp3" clip-begin="npt=11.022s" clip-end="npt=14.209s" id="rgn_aud_0004_0005"/>
+					<audio src="ea88_0004.mp3" clip-begin="npt=14.209s" clip-end="npt=18.608s" id="rgn_aud_0004_0006"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

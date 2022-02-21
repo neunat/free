@@ -1,0 +1,104 @@
+/*
+  Mission 1: Set the background image of the website to the image located at "assets/wood.jpg" (L18)
+  Mission 2: Continue in "index.html"
+  Mission 3: Add 10 pixels of space between the top site and the header (L30)
+  Hint: To add padding or margin in a specific direction use: padding-left, margin-right, etc.
+  Mission 4: The text of our header is defined by <h1>. Define <h1>'s font size to be 50px, align the text to be center, and set the text color to #fffeee (L35-37)
+ Mission 5: Create a class named "border" that applies a "solid" border style, brown border color, and border radius of 5% (L21-25) 
+  Mission 6-7: Continue in "index.html" 
+  Mission 8: The menu is too skinny. Set its width to 250px and height to 470px (L56-57)
+  Mission 9: We want the shadow only to appear when the user hovers their mouse over the image. How do we tell the program to only apply css only when the mouse hovers over the image? (L79)
+  Mission 10: The description is currently underneath the image of the chef. How do we move the description to the right of the chef? (L97)
+  Hint: Use this function to “float” the target component in the direction you specify!
+  Mission 11: Continue in "index.html"
+  Bonus A: Change the widths of every component to percentages to make the website more dynamic! Set the width of the following classes: .menu to 40%, .item to 50%, .photo to 50%, and .description to 40%. (L56, 74, 87, 93)
+*/
+
+body {
+background-image: url("assets/wood.jpg");  
+}
+
+.border{
+border-style: solid;
+border-color: brown;
+border-radius: 5%;  
+}
+
+header {
+  background-image: url(assets/cafe.jpg);
+  height: 400px;
+  padding-top: 10px;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #fffeee;
+  font-family: 'Lobster', cursive;
+  background-image: url(assets/frame.png);
+  height: 320px;
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+h2 {
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-left-style: solid;
+  border-left-width: 8px;
+  border-left-color: lightgray;
+}
+
+.menu {
+width: 250px;
+height: 470px;
+  margin: 10px;
+  float: left;
+  background-color: rgba(255, 222, 161, 0.808);
+}
+
+.menu h3 {
+  padding-left: 10px;
+}
+
+.menu p {
+  padding-left: 25px; 
+}
+
+.item {
+  float: right;
+  margin: 10px;
+  width: 260px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.item {
+  box-shadow: 1px 1px 2px darkgoldenrod, 0 0 25px orange, 0 0 5px brown;
+}
+
+.photo {
+  clear: left;
+  float: left;
+  margin: 10px;
+  width: 260px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.description {
+  width: 250px;
+  height: 450px;
+  margin: 10px;
+  clear: right;
+  float: right;
+  background-color: rgb(255, 222, 161, 0.808);
+}
+
+.description p {
+  padding-left: 10px;
+  width: 90%;
+}
