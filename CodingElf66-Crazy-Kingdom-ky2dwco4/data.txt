@@ -1,0 +1,996 @@
+Jester: Heyo! Can I get 20 gold to turn a pool into a super useful ball pit?
+Yes: This may not have been a great invesment.
++15 Popuarlity
+-20 Gold
+No: Ok, alright, ok.
+-7 Popuarlity
+
+Sheep: Hey, so, like, I kind of want to start a barber shop. You think, like, I could buy some materials? I can pay.
+Yes: Ay, party at my place! Thanks so much.
+-20 Materials
++5 Popuarlity
++17 Gold
+No: I won't let you crush my dreams.
+-6 Popuarlity
+
+Panther: Hey, can I have some gold for a karaoke machine?
+Yes: You're singing with me!
++17 Popuarlity
+-14 Gold
+No: You are missing a big opportunity here.
+-5 Happiness
+
+Fox: Can I invite some friends to the kingdom? We're going to rob the bank.
+Yes: Oh ok.
++12 People
+-18 Gold
+No: I really don't understand your reasoning.
+-4 Popuarlity
+
+Fairy: I'll give you some gold if you let me take some of your people to the Fairy World.
+Yes: They are going to love it there!
++5 Popuarlity
+No: I guess we'll just stay here.
+-7 Popuarlity
+
+Tiger: Can I get some materials and gold to build a cereal factory? It'll bring jobs to the kingdom.
+Yes: They're great!
+-9 Materials
+-9 Gold
++10 People
++8 Popuarlity
+No: Cereal is so good though.
+-9 Popuarlity
+
+Drink Me: Drink me?
+Yes: (It did not taste good)
+-15 Popuarlity
+No: ...
+-10 Popuarlity
+
+Queen Of Hearts: Tell people to stop working and pay more attention to me.
+Yes: I like this.
+-15 Materials
++7 Popuarlity
+-10 Gold
+No: You're no fun.
+-7 Popuarlity
+
+Polar Bear: Do you think we could turn down the air so our ice doesn't melt?
+Yes: Maybe we made it too cold.
++18 Materials
+-10 People
+-12 Popuarlity
+No: Well it won't be much before the ice melts.
+-10 Popuarlity
+
+Fox: I'd like to do some swiping? I promise I promise to give you gold for it.
+Yes: You aren't so bad after all
+-17 Popuarlity
++14 Gold
+No: You're not really fun.
+-5 Popuarlity
+
+Seal: Hey, can I get 12 rubber ducks? I can't pay for them though.
+Yes: That was easy! Thank you!
+-12 Materials
++7 Popuarlity
+No: It was still worth asking.
+-5 Popuarlity
+
+Raccoon: Come on, I'm bored. Can I go prank some people? Otherwise, I'm just stealing your stuff.
+Yes: Finally.
+-16 Popuarlity
+No: Your choice, not mines.
+-16 Materials
+
+Hamster: Sup, can I go spray paint some houses?
+Yes: Wow, you said yes. People will not like this.
+-15 Popuarlity
+No: That's what I figured, have a good evening.
+-5 Happiness
+
+Hamster: Sup human, give me 17 materials to build a bowling alley?
+Yes: Yes, finally a bowling alley! Thanks!
+-17 Materials
++17 Popuarlity
+No: No bowling alley, that's fair. Hope you have a good weekend.
+-6 Popuarlity
+
+Queen: Can I get some people to try the cake I just baked?
+Yes: They loved the cake!
++15 Popuarlity
+No: Fine, more for me.
+-5 Popuarlity
+
+Queen: Can I start forcing people in the kingdom to eat healthy? It will help them live longer.
+Yes: Thanks! Some people seem to not like these rules though.
++10 People
+-15 Popuarlity
+No: We can't just let everyone keep getting fat.
+-5 People
+-5 Popuarlity
+
+Raccoon: Come on, don't you think you're a little selfish? Give me some gold. Otherwise, I'm chasing people out of this kingdom.
+Yes: Wow, look at the selfish ruler being a little bit kind.
+-16 Gold
+No: Whatever, bye, bye people.
+-16 People
+
+Toucan: Hello! I'm Tax Toucan. It's time to pay your kingdom's taxes. Pay 15 gold?
+Yes: Great! Thank you!
+-15 Gold
+No: I apologize for what happens, I guess you'll have to pay in materials.
+-35 Materials
+
+Horse: Howdy, the fields are ready to harvest. You think I could get 10 people to help out?
+No: Darn, that is another year of wasted crop.
+-6 Popuarlity
+Yes: Thanks, partner.
++15 Material
+-10 People
+
+Anaconda: You are giving me materials. Otherwise, I'm taking your gold.
+Yes: Good choice. 
+-10 Materials
+No: Works for me.
+-15 Gold
+
+Chick: Hi, my mom said you would give me 10 wood planks for my school project.
+Yes: Thanks!
+-10 Materials
++7 Popuarlity
+No: Wah, my mom will be so mad...
+-20 Materials
+
+Turtle: I've been mining some gold, but I think I should start a farm. Should I be a farmer?
+Yes: Great! I love farming!
++10 Materials
+No: I guess mining for gold is fine.
++10 Gold
+
+Dormouse: Hi! Can I get some gold to go pick blueberries?
+Yes: Yay! Here, you can have some too.
++15 Materials
++7 Popuarlity
+-12 Gold
+No: Aww... I really like blueberries.
+-7 Popuarlity
+
+Caterpillar: Hello, even though not everyone likes mushrooms, can I go get some more?
+Yes: Yay, you're the best.
++15 Material
+-13 Popuarlity
+No: I am sad.
+-7 Popuarlity
+
+King: Hey, I have some scary people in my kingdom. Do you want them?
+Yes: Great, here you go.
++10 people
+-14 Popuarlity
+No: I guess I understand your reasoning.
+-4 Popuarlity
+
+Duck: I need some resources for a trampoline. Can I take them from people and give you some?
+Yes: Great! Here you go
++12 Materials
+-13 Popuarlity
+No: Whatever.
+-5 Popuarlity
+
+Hamster: Sup, gimme 15 gold!
+Yes: Wow, I can't believe that actually worked.
+-15 Gold
+No: Ok, you make a fair point. Have a nice day, kind sir.
+-5 Happiness
+
+Turtle: Hello! I just met some new turtles. Can they come over and play?
+Yes: Yay! Thanks! I just needed some materials for them too.
+-10 Materials
++10 People
++5 Popuarlity
+No: Aww, come on.
+-8 Popuarlity
+
+Witch: Can I place a charm on a few of your people? It'll probably work well.
+Yes: Hmm... The charm seems to have made people very sad.
+-20 Popuarlity
+Yes: Hmm... The charm seems to have turned people to gold.
+-10 People
++15 Gold
+
+Squirrel: I should be gathering nuts, but can I go to a party instead?
+Yes: That's what we're talking about.
++10 Popuarlity
+No: Fine, more nuts for you.
++12 Materials
+-10 Popuarlity
+
+Penguin: Give me some materials and gold, and I'll build the best amusement park ever!
+Yes: I told you, it would be the best ever!
+-15 Materials
++15 People
++20 Popuarlity
+-15 Gold
+No: Just give me another chance...
+-5 Popuarlity
+
+Cow: So the cows want to throw a big MOO-vie party, can we get some resources?
+Yes: Thanks! It will be a truly MOO-ving experience!
+-15 Materials
++15 people
++9 Popuarlity
+-8 Gold
+No: MOO!
+-10 Popuarlity
+
+Elf: Some of our houses burned down in a fire. Can I get some materials to rebuild?
+Yes: Thanks so much!
+-16 Materials
++6 Popuarlity
+No: But... the houses are gone.
+-10 People
+-11 Popuarlity
+
+Arctic Fox: Do you know what the Arctic Fox says?
+Yes: Oh, cool.
++7 Popuarlity
+No: Oh, ok.
++7 Popuarlity
+
+Witch: So, I accidentally cursed the kingdom? I'll need some people to help remove it.
+Yes: That was close.
+-12 People
++7 Popuarlity
+No: It wasn't a good curse
+-12 Materials
+-6 People
+-10 Popuarlity
+-6 Gold
+
+Elf: For 10 gold, I'll move my entire elf tribe into the kingdom. What do you say?
+Yes: Great call!
++15 People
++5 Popuarlity
+-10 Gold
+No: Fine, we'll find another kingdom.
+-7 Popuarlity
+
+Dog: Can I have some people and we'll get you a treasure chest?
+Yes: Radical!
+-11 people
++15 Gold
+No: I guess you don't want more gold.
+-5 Popuarlity
+
+Cheshire Cat: Hello, can I please get some people to start my garden?
+Yes: Oh, thank you!
++15 Materials
+-12 People
++4 Popuarlity
+No: Sad.
+-9 Popuarlity
+
+Anaconda: Let me slither around people's houses. Now.
+No: You're no fun.
+-7 Popuarlity
+Yes: Yes. Finally
+-5 People
+-15 Popuarlity
+
+Hedgehog: Can I go hurt some people with my spikes?
+Yes: I like you're styling.
+-8 people
+-12 Popuarlity
+No: Boring...
+-5 Popuarlity
+
+Capuchin: Hey, can I get 17 materials to create an invention?
+Yes: Awesome, I'll let you know how to goes.
+-17 Materials
+No: Too bad that you don't trust me.
+-5 Popuarlity
+
+Chicken: Can I have 17 materials to build a coop for some new chickens?
+Yes: Thanks so much! The other chicken will love this!
+-17 Material
++17 People
+No: Well now I'm sad.
+-6 Popuarlity
+
+Turtle: Do you think if I'm getting too fat?
+Yes: Oh no, my mom was right.
+-15 Popuarlity
+No: That's what I said. Here's some gold, you're the best.
++7 Popuarlity
++7 Gold
+
+Mad Hatter: Can I get some materials and gold to set up a live trivia game show?
+Yes: This is amazing!
+-15 Materials
++10 People
++20 Popuarlity
+-10 Gold
+No: Dang, it would have been so much fun.
+-7 Popuarlity
+
+Arctic Hare: Can I bring my family to the kingdom?
+Yes: Nice!
++9 People
+No: Aww, that's sad.
+-5 Popuarlity
+
+King: Repair the bridge between our kingdoms. It'll take 20 materials. If you don't, we'll raid your kingdom.
+Yes: Good choice.
+-20 Materials
+No: Very well, too bad.
+-15 Materials
+-15 People
+-15 Popuarlity
+-15 Popuarlity
+
+Queen: Do you think I could get some resources to go save some children outside the kingdom?
+Yes: Oh thank you!
+-12 Materials
++14 People
+No: These poor children...
+-10 Popuarlity
+
+Elf: People will hate this, but I need you to cancel the carnival, because its going to rain hard today.
+Yes: Whew!
+-15 Popuarlity
+
+No: I don't think that people like it in the rain.
+-10 Materials
+-15 People
+-20 Popuarlity
+-15 Gold
+
+Raccoon: Come on, it's overcrowded here. Let's kick some people out or we'll use too many materials.
+Yes: You're a smart person
++15 Materials
+-13 People
+No: Wah.
+-10 Materials
+
+Arctic Fox: Hey, can I buy 13 acres of land for 15 gold?
+Yes: Perfect!
+-13 Materials
++15 Gold
+No: That was a great deal.
+-5 Popuarlity
+
+Polar Bear: Do you think I could test out my freeze ray on some people?
+Yes: It works!
+-10 People
+-5 Popuarlity
+No: I guess I will never know if it works or not.
+-5 Popuarlity
+
+Horse: Howdy, can I have some extra hay?
+Yes: Well thanks partner.
+-12 Materials
++12 Popuarlity
+No: Neigh...
+-7 Popuarlity
+
+Seal: Can I build a theater and put on a show?
+Yes: Thanks! Everyone likes the show!
+-12 Materials
++17 Popuarlity
+-5 Gold
+No: I won't let you crush my dreams.
+-7 Popuarlity
+
+Rabbit: Can I invite some fellow businessmen to the kingdom?
+Yes: Thanks! Trust me, they're good guys.
++10 People
+-5 Popuarlity
+No: Boo.
+-5 Popuarlity
+
+Alice: Hey! Can I, you know, sell some of your flowers? I'll give you the profits.
+Yes: I am an excellent salesperson.
+-12 Materials
++5 Popuarlity
++15 Gold
+No: Oh, ok then.
+-7 Popuarlity
+
+Cow: The cows are having some friends over, you mind if we MOO-ve over to some new land?
+Yes: That's MOO-tastic!
+-12 Materials
++8 People
++14 Popuarlity
+No: Wow, you're so MOO-dy.
+-10 Popuarlity
+
+King: Give me 20 people for my kingdom, or we'll raid your kingdom.
+Yes: Great decision
+-20 people
+No: Very well, too bad.
+-15 Materials
+-15 People
+-15 Popuarlity
+-15 Gold
+
+Bear: Ok, I won't eat people if you buy me some salmon. How does that sound?
+Yes: Great!
++10 Popuarlity
+-12 Gold
+No: Welp, sorry.
+-15 People
+
+Arctic Hare: It'll annoy some people, but can I jump around like crazy in the kingdom? I'll pay some gold to do it.
+Yes: Bouncy time!
+-16 Popuarlity
++16 Gold
+No: Sigh.
+-5 Popuarlity
+
+Pig: Umm... Can you let my 3 little pig friends in?
+Yes: Umm... cool, they're kind of annoying though.
++3 People
+No: Umm... whatever...
+-5 Popuarlity
+
+Waffle: Do you like waffles?
+Yes: Yeah, we like waffles!
++5 Popuarlity
+No: No...
+-20 Popuarlity
+
+Pancakes: Do you like pancakes?
+Yes: Yeah, we like pancakes!
++5 Popuarlity
+No: No...
+-20 Popuarlity
+
+French Toast: Do you like french toast?
+Yes: Yeah, we like french toast!
++10 Popuarlity
+No: No...
+-20 Popuarlity
+
+Pig: Umm... Oh yeah, I need to cover stuff in mud for, umm..., new pigs?
+Yes: Umm... yeah thanks, sorry if people don't like the mud.
+-7 Materials
++14 People
+-10 Popuarlity
+No: Umm..., ok.
+-6 Popuarlity
+
+King Of Hearts: Hello. I'll trade you 20 materials if you give me 15 gold?
+Yes: Great doing business with you.
+-15 Gold
++20 Materials
+No: Very well.
+-6 Popuarlity
+
+Orangutan: Hello. I am Dr. Stephen Norwitz. May have some resources to perform scientific research?
+Yes: Thank you, I will report back soon with my findings.
+-12 Materials
+-8 People
+-8 Gold
+No: Very well, perhaps another time.
+-4 Popuarlity
+
+Alice: Hey! So, I'm like, lost. Is Wonderland over there?
+Yes: Whoa, thanks kind person!
++9 Popuarlity
+No: Whoa, thanks kind person!
++9 Popuarlity
+
+Arctic Hare: Can I build a trampoline park? It will take 20 materials?
+Yes: Let's bounce!
+-20 Material
++7 People
++12 Popuarlity
++5 Gold
+No: Sigh.
+-6 Popuarlity
+
+King Of Hearts: Hello, my kingdom is so successful. Would you like some extra people?
+Yes: Here you go.
++15 People
+No: Very well.
+-7 Popuarlity
+
+Caterpillar: Hello, can I show off my dance moves?
+Yes: Nice, here's some gold.
++9 Popuarlity
++7 Gold
+No: Aww... ok.
+-10 Popuarlity
+
+Elf: Please don't cut down the forest for materials. What if I give you 15 gold to not cut it down?
+Yes: Thanks so much!
++15 Gold
+No: The poor trees.
++15 Materials
+-9 Popuarlity
+
+Horse: Howdy partner, you think I could have 15 wood for new stables. I'll pay for it.
+Yes: Thanks partner.
+-15 Materials
++3 Popuarlity
++10 Gold
+No: Well, alright then. The other horses aren't going to be happy about this one.
+-5 Popuarlity
+
+Jaguar: Ok. Can I get some people to test my vegetarian bacon?
+Yes: I don't think they liked it.
+-10 People
+-13 Popuarlity
+No: Fine, I'll just eat it myself.
+-6 Popuarlity
+
+Anaconda: You are going to let me bite some people.
+Yes: Just as I planned.
+-8 People
+-15 Popuarlity
+No: I hate you.
+-7 Popuarlity
+
+Dormouse: Hi! Can I have some materials to build a playground and make some new friends?
+Yes: Yay! So many friends.
+-12 Materials
++7 People
++15 Popuarlity
+No: Aww... I'm so lonely now.
+-10 Popuarlity
+
+Walrus: Ay, we need to build some defenses to protect our kingdom.
+Yes: Good choice, mate.
+-17 Materials
++10 Popuarlity
+No: That's unfortunate.
+-15 People
+-5 Popuarlity
+
+Arctic Hare: Can I build a factory in the kingdom to produce materials? It won't smell too good.
+Yes: I think you made the right decision.
++20 Materials
+-16 Popuarlity
+-5 Gold
+No: Ok.
+-7 Popuarlity
+
+White Rabbit: Most people in the kingdom love strawberries. However, if we grow carrots instead, we'll produce way more.
+Yes: That's a great call!
++15 Materials
+-13 Popuarlity
+
+Hedgehog: Hey, can we kick out everyone named Chad?
+Yes: Take that, Chad.
++12 Popuarlity
+-11 People
+No: But Chad deserves it!
+-9 Popuarlity
+
+Goldfish: Let's buy a cotton candy machine and invite everyone we know!
+Yes: PARTY TIME!
++7 People
++10 Popuarlity
+-18 Gold
+No: You really hate cotton candy, I guess.
+-5 Popuarlity
+
+Bear: Hey, do you think I could eat some people?
+Yes: Thanks!
++7 Popuarlity
+-10 People
+No: Maybe next time.
+-5 Popuarlity
+
+Cat: LOOK, I HAVE GOLD COIN.
+Yes: I hope you like my present.
++10 Gold
+No: Oh, fine it's my gold coin now.
+-5 Popuarlity
+
+Mad Hatter: Hello, can you buy me an elephant?
+Yes: I love elephants.
++1 People
++12 Popuarlity
+-12 Gold
+No: But, I love elephants...
+-7 Popuarlity
+
+Walrus: Ay, do you want some gold? What do you say we organize a wagon wash to raise some money?
+Yes: I'll get everything set up!
+-10 Materials
+-7 People
++18 Gold
+No: Alright then.
+-5 Popuarlity
+
+Cheshire Cat: Hello, can I please get gold to open a trading post? I'll trade some stuff for you.
+Yes: Pur-fect.
++10 Materials
++5 People
++8 Popuarlity
+-12 Gold
+No: Bad decision.
+-7 Popuarlity
+
+Jester: Heyo! This may upset some people, but do you think I could take a break and go fishing?
+Yes: Thanks! It means a lot that you care about me too! Here are some of my fish.
++10 material
++5 people
+-15 Popuarlity
+No: I guess it's more juggling for me.
+-5 Popuarlity
+
+Kitten: GIVE ME GOLD FOR HAMBURGER.
+Yes: THANKS HUMAN.
++10 Popuarlity
+-8 Gold
+No: NO.
+-10 Popuarlity
+
+Queen Of Hearts: Hey, let's force our people to gather more resources. What do you say?
+Yes: Well. it's working, but I don't think they like it.
++13 Materials
+-15 Popuarlity
++8 Gold
+No: Well. it's working, but I don't think they like it.
++13 Materials
+-15 Popuarlity
++8 Gold
+
+Fox: Can I get a few people from your kingdom to join my crew? I'll pay gold for them.
+Yes: This is perfect!
+-14 People
++15 Popuarlity
++8 Gold
+No: Whatever you say.
+-6 Popuarlity
+
+King Of Hearts: Let's throw a music festival between our kingdoms. We'll each pay for half. How does that sound?
+Yes: Fantastic!
+-15 Materials
++10 People
++18 Popuarlity
+-12 Gold
+No: Very well.
+-7 Popuarlity
+
+Jaguar: I won a running race, do you want the gold prize?
+Yes: Cool! Enjoy your gold!
++12 Gold
+No: Whatever. I guess I'll just keep it myself.
+-7 Popuarlity
+
+Rabbit: Ok. Ok. I'll sell you 10 carrots for 10 gold. Sound good?
+Yes: Sold!
++10 Materials
+-10 Gold
+No: Apparently you don't know what a good deal is.
+-7 Popuarlity
+
+Squirrel: Can I get some wood to build a treehouse for my cousins?
+Yes: Thanks, I love trees.
++14 People
+-12 Materials
+No: Oh, so I guess they're not going over for dinner.
+-6 Popuarlity
+
+Queen: Do you think I could buy a new gold crown?
+Yes: Thanks! You're the best!
++15 Popuarlity
+-10 Gold
+No: But, I hate my old crown.
+-6 Popuarlity
+
+Duck: Can I bring some annoying ducklings to add people to the kingdom?
+Yes: Yay, sorry if they're a little loud. (Quacks echo in the background)
++12 People
+-10 Popuarlity
+
+Two Of Spades: (The card just stares at you, it looks like it wants to move into your kingdom)
+Yes: (The Two of Spades just started giving people paper cuts)
+-7 People
+-13 Popuarlity
+Yes: (The Two of Spades scammed a bunch of people in card games, but gave you the gold)
+-15 Popuarlity
++15 Gold
+Yes: (The Two of Spades did a cool card trick)
++17 Popuarlity
+
+Fairy: Can I be realeased for a few hours?
+Yes: Great! I'll let you know what happens!
++7 Popuarlity
+
+(Fairy comes back): Look! I turned some things gold while I was released.
+-10 Materials
++17 Gold
+
+Unicorn: Can I get some gold to enter a mystical race? If I win, I'll give you half of the prize.
+Yes: Great! I'll get to training immediately.
+-12 Gold
+No: Maybe next race.
+-7 Popuarlity
+
+Unicorn (if Unicorn LOST): I lost the race...
+-10 Popuarlity
+
+Rabbit: Hear me out, we dig a river through some homes, make some people mad, but make a bunch of gold from the trade route?
+Yes: Now, we're doing business.
+-7 Materials
+-7 People
+-15 Popuarlity
+
+Unicorn: Hello! Can I have some resources to go explore the magical forest?
+Yes: Thanks! I will return soon.
+-10 Materials
+-7 People
+-7 Gold
+No: I'm disappointed.
+-10 Popuarlity
+
+Cheshire Cat: Hello, can I please "borrow" some humans?
+Yes: Very good.
+-13 People
++10 Popuarlity
+No: Boo...
+-5 Popuarlity
+
+Tiger: Can I cut down part of the rainforest to build shelter for my cubs?
+Yes: Thanks, people don't seem to be happy about the rainforest though.
+-10 Materials
++15 People
+-14 Popuarlity
+No: I guess we just have to leave the kingdom then.
+-9 People
+
+Moose: Look, I'm a cow!
+Yes: Thanks, I'm really trying
++7 Popuarlity
+No: But I try so hard.
+-10 Popuarlity
+
+Moose: MOO!
+Yes: I'm getting so much better!
++7 Popuarlity
+No: Come on, I've been working on that.
+-10 Popuarlity
+
+Jester: Heyo! Can I get some materials to throw an epic festival?
+Yes: Thanks! The festival is a huge success!
+-20 Materials
++10 People
++20 Popuarlity
++10 Gold
+No: We are all disappointed.
+-10 Popuarlity
+
+Mad Hatter: You want to open this box?
+Yes: Dang it, the box had lots of annoying bugs.
+-7 People
+-17 Popuarlity
+Yes: Yay, the box had paper clips!
++15 Materials
+Yes: Yay, the box had a golden cat statue!
++15 Gold
+
+Polar Bear: Let's buy a snow cone machine for 14 gold?
+Yes: Yay!
++17 Popuarlity
+-14 Gold
+No: That is disapointing.
+-7 Popuarlity
+
+Panther: Hello, would you like to buy some advanced minerals for 15 gold?
+Yes: I think you'll be happy with your purchase.
++16 Materials
+-15 Gold
+No: Very well.
+-6 Popuarlity
+
+Arctic Hare: Can I bring my family to the kingdom?
+Yes: Nice!
++9 People
+
+Cheshire Cat: Hello, can I please get gold to open a trading post? I'll trade some stuff for you.
+Yes: Perfect!
++10 Materials
++5 People
++8 Popuarlity
+-12 Gold
+
+Arctic Hare: Can I build a trampoline park? It will take 20 materials?
+Yes: Let's bounce!
+-20 Materials
++7 People
++12 Popuarlity
++5 Gold
+No: Fine, no bouncing.
+-5 Popuarlity
+
+Goldfish: Do you think I could flood the city so I can swim everywhere?
+No: Fine.
+-5 Popuarlity
+
+Queen Of Hearts: Let's tax our people more. They won't like it, but you will get more gold.
+Yes: Great choice.
+-16 Popuarlity
++17 Gold
+
+Caterpillar: Hello, can I turn some of my mushrooms into people?
+Yes: Oh thank you.
+-13 Materials
++13 People
++7 Popuarlity
+No: Ok.
+-7 Popuarlity
+
+Jester: Heyo! Can I get some gold for new juggling balls? The people will love them.
+Yes: Thanks! These are the best!
++15 Popuarlity
+-10 Gold
+No: Sad. :(
+-7 Popuarlity
+
+Eat Me: Eat me?
+Yes: (It did not taste good)
+-15 Popuarlity
+Yes: (You try to take a bite, but the biscuit is full of stones)
++10 Materials
+No: ...
+-8 Popuarlity
+
+Panther: I know it'll make some people mad, but you should build houses instead of that new park. Right?
+Yes: I think this is a good decision.
++15 People
+-17 Popuarlity
+
+Hedgehog: Can I get some gold for hedge trimmers to do some hedging, I'll give you the extra branches?
+Yes: You're the best!
++14 Materials
+-14 Gold
+No: But, I like hedging.
+-5 Popuarlity
+
+Wizard: So, I've been learning about potion brewing. Can I give my potions to a few people in town?
+Yes: Awesome! The potion made your workers extra productive!
++15 Materials
++15 Gold
+Yes: Awesome! The potion cloned everyone who drank it!
++15 People
+
+Goat: Hello, Your Majesty. I am Goatee The Second. I request resources to go on an adventure to the Mountains of Winterfrost.
+Yes: Thank you. I will speak to you again once I return.
+-9 Materials
+-7 People
+-8 Gold
+
+Goat (after adventuring): Your Majesty, I am ashamed to say that I failed to reach the Mountains of Winterfrost.
+-10 Popuarlity
+
+Goat: Your Majesty, I have returned with a chest full of gold from my quest!
++30 Gold
+
+Jester: Heyo! Can I get some gold to recruit new performers?
+Yes: Fantastic!
++10 People
++7 Popuarlity
+-14 Gold
+
+Bear: Hey, I just ate some people out back, can I pay you back for my mistake?
+Yes: Cool, and sorry about the whole eating people thing.
+-10 People
+-5 Popuarlity
++15 Gold
+
+White Rabbit: I'll only ask once, can I get 20 materials to build a time machine?
+Yes: Yay, this is awesome!
++60 Gold
++60 People
++60 Materials
++60 Popuarlity
+No: This is a missed opportunity.
+-10 Happiness
+
+Penguin: Can I get some materials to go ice fishing and make some friends?
+Yes: My dreams are coming true!
+-15 Materials
++5 People
++10 Popuarlity
+No: Normal fishing it is.
+-5 Popuarlity
+
+King: I may be harsh sometimes, but right now I would like to offer you a gift.
+Yes: I hope we can continue our friendship.
++10 Materials
++10 People
++10 Popuarlity
++10 Gold
+
+Jester: Heyo! Can I get some gold for new juggling balls? The people will love them.
+Yes: Thanks! These are the best!
++15 Popuarlity
+-10 Gold
+
+Fairy: Can I have some gold to have a sleepover with some friends?
+Yes: This will be the best sleepover ever!
++7 People
++13 Popuarlity
+-12 Gold
+No: Wah!
+-10 Popuarlity
+
+Unicorn: Hey! Can I get some materials and workers to open a profitable doughnut shop?
+Yes: Sick!
+-12 Materials
+-8 People
++13 Popuarlity
++10 Gold
+No: But, no one makes good doughnuts around here.
+-8 Popuarlity
+
+Macaw: Can I invite some people over? They're definetly not bad people, and will make you regret this decision.
+Yes: Look, they're so fun!
++15 People
++15 Popuarlity
+No: You will regret this decision.
+-5 Popuarlity
+
+Dormouse: Do you want to buy some of my tea?
+Yes: Yay! Enjoy the tea!
++15 Popuarlity
+-8 Gold
+No: Aww. I love tea.
+-6 Popuarlity
+
+Wizard: So, I've been learning about spells. Can I cast my spell to a few people in town?
+Yes: YES! The spell produced many great rewards!
++15 Materials
++15 People
+Yes: NO! The spell didn't go so well.
+-15 Materials
+-15 People
+-15 Popuarlity
+
+Witch: Would you like to gaze into my crystal ball?
+Yes: Hmm... It looks like your future has plenty of riches.
++10 Materials
++15 Gold
+No: Sure.
+-5 Popuarlity
+
+Witch: Ok, I'll give you materials for it, but can I go scare some people?
+Yes: Let the spookiness begin!
++15 Materials
+-3 People
+-15 Popuarlity
+
+Arctic Fox: Here's the deal: you let me steal from people, I'll give you half the profits.
+Yes: Pleasure doing business with you.
+-15 Popuarlity
++17 Gold
+No: That was a great deal.
+-5 Popuarlity
+
+Dog: There's going to be a Puppy talking to you in a while, please do not give him gold.
+
+Puppy: I feel really sick, can I have some gold to buy medicine?
+Yes: Thanks, hopefully I feel better soon!
++15 Popuarlity
+-12 Gold
+No: Dang it, you got me.
+-5 Happiness
+
+Walrus: Ay, can I get some people to go mine for minerals?
+Yes: Great thinking!
++17 Materials
+-14 People
+No: Alright then.
+-5 Popuarlity
+
+Squirrel: I'm going nuts dude, can I have some gold to help?
+Yes: Hopefully this works.
+-14 Gold
++14 Popuarlity
+No: But I don't think anybody else is pretty happy with me.
+-6 Popuarlity

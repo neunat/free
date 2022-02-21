@@ -1,0 +1,17 @@
+entrypoint = "./.build/index.js"
+compile = "./.config/build.sh"
+run = "node --enable-source-maps .build/index.js"
+
+[languages.typescript]
+pattern = "**/*.ts"
+syntax = "typescript"
+
+[languages.typescript.languageServer]
+start = [ "typescript-language-server", "--stdio" ]
+
+[packager]
+language = "nodejs"
+
+[packager.features]
+packageSearch = true
+guessImports = false

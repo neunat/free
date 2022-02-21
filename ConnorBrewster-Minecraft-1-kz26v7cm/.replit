@@ -1,0 +1,4 @@
+run = "./run.sh"
+
+[nix]
+channel = "stable-21_11"

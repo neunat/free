@@ -1,0 +1,3 @@
+cd cycle
+echo [Shell] Running Script...
+node .

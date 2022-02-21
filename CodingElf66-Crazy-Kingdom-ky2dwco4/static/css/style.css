@@ -1,0 +1,78 @@
+* {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  font-size: 17px;
+  max-width: 700px;
+}
+
+body {
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #96c7ff, #427eff, #1e3ffc, #000272, #0b0144, #000003);
+  background-size: 400% 400%;
+}
+
+h2 {
+  text-shadow: 0px 0px 40px #00a9e2;
+}
+
+.description {
+  position: relative;
+  align-items: center;
+}
+
+*[description]{
+  position: relative;
+}
+
+*[description]:hover:after{
+  content: attr(description);
+  position: absolute;
+  top: 40px;
+  background-color: #090050;
+  border-radius: 0.5rem;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #00a9e2;
+  color: white;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.1s;
+  text-align: center;
+  min-width: 100px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #110956;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(12, 7, 51);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #090050;
+  border-radius: 5px;
+}

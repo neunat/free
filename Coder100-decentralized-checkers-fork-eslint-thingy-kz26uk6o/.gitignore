@@ -1,0 +1,10 @@
+# Replit files
+.replit
+replit.nix
+
+# Yarn
+node_modules
+
+# Waffle
+build
+cache

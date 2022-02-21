@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.cm-editor {
+    height: 50vh;
+    font-size: 14px;
+    width: 150vw;
+    border: none;
+}
+
+#editor {
+    position: absolute;
+    width: 150vw;
+    height: 50vh;
+    left: min(20vw, 200px);
+}
+
+.cm-scroller {
+    overflow: auto;
+}
+
+body, html {
+    margin: 0;
+    overflow: hidden;
+    width: 300vw;
+}
+
+.toolbar {
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    background: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+}
+.toolbar button {
+  user-select:none;
+  -webkit-user-select:none;
+  margin-top: 25px;
+  font-size:3vh;
+  font-weight:bold;
+  color:blue;
+}
+.toolbar button.run {
+    /*margin-left: calc(min(20vw, 200px) - 100px);*/
+    width: calc(20vw / 2);
+    max-width: 100px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 6px 1px rgb(145, 155, 150);
+    transition: 0. display25s;
+    display: block; 
+    background: rgb(60, 180, 75);
+}
+
+.toolbar .run:hover {
+    transform: translateY(1px);
+    box-shadow: 0px 5px 1px rgb(140, 150, 145);
+}
+
+.toolbar .run:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 1px rgb(141, 145, 142);
+}
+.toolbar button.newfile {
+    background:rgba(255,255,0, 0.2);
+    transition:0.25s;
+    color:blue;
+}
+.toolbar button.newfile:hover {
+    background:rgba(255,255,0, 0.3);
+    color:blue;
+}
+.toolbar button.newfile:active {
+    background:rgba(255,255,0, 0.3);
+    color:blue;
+    padding:5px;
+}
+.terminall {
+    height: 50vh;
+    width: calc(100vw - min(20vw, 00px));
+    top: 50vh;
+    left: min(20vw, 200px);
+    position: absolute;
+}
+
+.terminal {
+    height: 50vh;
+    overflow-y:scroll;
+}
+
+.toolbar .files {
+    margin-top: 20px;
+    border-top: 2px solid rgb(38, 38, 38);
+    width: min(20vw, 200px);
+    height: 100%;
+    padding-top: 10px;
+}
+
+.toolbar .files .file {
+    background: rgb(40, 40, 40);
+    font-family: Roboto;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.toolbar .files .file.selected {
+    background: rgb(60, 60, 60);
+}, 60);
+}

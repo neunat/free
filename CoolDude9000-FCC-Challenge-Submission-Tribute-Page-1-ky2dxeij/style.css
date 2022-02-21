@@ -1,0 +1,52 @@
+:root {
+  --margin-width: 100px;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+img {
+  /* Credits to below css code: https://www.w3schools.com/howto/howto_css_image_center.asp*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Credits to above css code: https://www.w3schools.com/howto/howto_css_image_center.asp*/
+  margin-bottom: 15px;
+  width: auto;
+  height: auto;
+  max-width: 220px;
+  max-height: 330px;
+}
+
+a {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(77, 77, 77);
+  text-decoration: underline;
+}
+
+#cap-link {
+  color: rgb(103, 103, 101);
+}
+
+#cap-link:hover {
+  color: rgb(39, 39, 38);
+}
+
+.center {
+  text-align: center;
+}
+
+.indent { 
+  text-indent: 10px;
+}

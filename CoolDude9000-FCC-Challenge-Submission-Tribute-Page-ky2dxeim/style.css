@@ -1,0 +1,158 @@
+:root {
+  --margin-width: 100px;
+}
+
+::selection {
+  background-color: rgb(217, 217, 217);
+  color: rgb(51, 51, 51);
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+img {
+  /* Credits to below css code: https://www.w3schools.com/howto/howto_css_image_center.asp*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Credits to above css code: https://www.w3schools.com/howto/howto_css_image_center.asp*/
+  margin-bottom: 15px;
+  width: auto;
+  height: auto;
+  max-width: 220px;
+  max-height: 330px;
+}
+
+a {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(77, 77, 77);
+  text-decoration: underline;
+}
+
+#cap-link {
+  color: rgb(103, 103, 101);
+}
+
+#cap-link:hover {
+  color: rgb(39, 39, 38);
+}
+
+#lightgray-container {
+  background-color: lightgray;
+  margin-left: var( --margin-width);
+  margin-right: var( --margin-width);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#lightgray-container:hover {
+  background-color: rgb(191, 191, 191);
+}
+
+#tribute-info {
+  background-color: hsl(0, 0%, 70%);
+  margin-right: var( --margin-width);
+  margin-left: var( --margin-width);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+#tribute-info:hover {
+  background-color: rgb(153, 153, 153);
+}
+
+
+#tribute-achievements {
+  background-color: hsl(0, 0%, 70%);
+  margin: 25px var( --margin-width) 25px var( --margin-width);
+  list-style-position: inside;
+  padding: 10px;  
+  border-radius: 10px;
+}
+
+#tribute-achievements:hover {
+  background-color: rgb(153, 153, 153);
+}
+
+#learn-more {
+  background-color: #95a3a6;
+  margin-right: var( --margin-width);
+  margin-left: var( --margin-width);
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+#learn-more:hover {
+  background-color: rgb(130, 147, 151);
+}
+
+#img-div {
+  background-color:hsl(60, 59%, 80%);
+  color: hsl(60, 1%, 45%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 25px var( --margin-width) 25px var( --margin-width);
+  border-radius: 10px;
+}
+
+#foot {
+  background-color:#95a3a6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px var( --margin-width) 0px var( --margin-width);
+  border-radius: 10px;
+}
+
+#foot:hover {
+  background-color: rgb(130, 147, 151);
+}
+
+#img-div:hover { 
+  background-color:hsl(60, 59%, 75%);
+  color: hsl(60, 1%, 30%);
+}
+
+
+.center {
+  text-align: center;
+}
+
+.indent { 
+  text-indent: 10px;
+}
+
+@media (max-width: 859px) {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    max-height: 45%;
+  }
+
+  #img-div {
+    background-color:hsl(60, 59%, 80%);
+    color: hsl(60, 1%, 45%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-left: var( --margin-width);
+    margin-right: var( --margin-width);
+    border-radius: 10px;
+  }
+
+  #img-div:hover { 
+    background-color:hsl(60, 59%, 75%);
+    color: hsl(60, 1%, 30%);
+  }
+}

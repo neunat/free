@@ -1,0 +1,128 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.curr-url {
+  font-weight: bolder;
+}
+
+.id {
+  color: rgb(140, 0, 255);
+}
+
+.json-store {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  user-select: all;
+}
+
+.center {
+  text-align: center;
+  margin: 16px;
+}
+
+.center2 {
+  text-align: center;
+  margin: 8px;
+}
+
+a {
+  color: rgb(140, 0, 255);
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(79, 0, 143);
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background: rgb(140, 0, 255);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(79, 0, 143);
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+tr, td, th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 16px;
+}
+
+code {
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+pre > code {
+  display: block;
+  padding: 8px;
+}
+
+.button-btn {
+  font-family: 'Nunito', sans-serif;
+  outline: 0;
+  border: none;
+  background: rgb(226, 107, 120);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.button-btn:hover {
+  border: none;
+  background: rgb(177, 81, 93);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.button-btn:focus, .btn:focus {
+  box-shadow: 0 0 0 3px rgba(177, 81, 93, 0.5);
+}
+
+.card {
+  position: absolute;
+  right: 8px;
+  width: 150px;
+  background: black;
+  border-radius: 4px;
+  padding: 16px 8px;
+  color: white;
+  bottom: 8px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  display: none;
+}
+
+.card-success {
+  background: rgb(18, 150, 18);
+}
+
+.card-success:hover {
+  background: rgb(13, 102, 13);
+}
+
+.card-error {
+  background: rgb(150, 11, 11);
+}
+
+.card-error:hover {
+  background: rgb(102, 7, 7);
+}

@@ -1,0 +1,16 @@
+p {
+  animation-duration: 5s;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0,0);
+    color: blue;
+  }
+
+  100% {
+    transform: translate(0,100px);
+    color: red;
+  }
+}

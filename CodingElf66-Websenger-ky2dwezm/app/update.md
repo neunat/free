@@ -1,0 +1,4 @@
+## v2.5.7 
+### Changelog
+
+https://web.dev/measure/ check for site is complete. The scores are high (All above 90). UI Update (Ugh again) The message bubbles now actually work. Oh and an update system is installed. (Thats why your seeing this) We are now on the replit spotlight page and the setup for the website on the server side is made to increse speeds. The code was orginally making 2 Webservers one for socketIO and one for HTML. Now it's just one for BOTH, It was technically possible anyways lol. I fixed the popup's "x" button to work. And thats about it for now guys! And also. If you read all this. It's pointless LOL. Bye stop reading                 NOW                          STP       STOP           ARGH

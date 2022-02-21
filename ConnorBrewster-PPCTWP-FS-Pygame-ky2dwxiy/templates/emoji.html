@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Emoji</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="/static/bulma.min.css">
+    <script src="/static/emoji.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Emoji app</h1>
+        <p class="subtitle">This is an example of using <strike><a href="https://docs.repl.it/misc/database">Replit Database</a></strike> SQLite3 and Flask to build a Python app where people can react with emoji. <a href="https://repl.it/@luisreplit/SQLite">Check out the repl!</a></p>
+        <form action="/" method="POST">
+          
+          <div class="field">
+            <div class="control">
+              {% for e in emoji %}
+              <input class="button is-large" type="submit" name="emoji" value="{{ e }}" />
+              {% endfor %}
+              <button class="button is-large is-danger" name="kill">🔪</button>
+            </div>
+          </div>
+          
+        </form>
+
+        {% for emoji, count in counts %}
+          <p class="title">
+            {{ emoji }} {{ count }}
+          </p>
+        {% endfor %}
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

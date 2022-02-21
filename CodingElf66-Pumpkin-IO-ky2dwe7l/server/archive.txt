@@ -1,0 +1,66 @@
+
+            /*
+            if (user.x > 1020) user.x = 1020;
+            if (user.x < 0) user.x = 0;
+            if (user.y > 510) user.y = 510;
+            if (user.y < 0) user.y = 0;
+
+            // user diam is ~30
+            // water diam is ~8
+            const rad = 30 * (1 + user.score / 100);
+            const drops = quadt.query(new Circle(user.x, user.y, 2 * rad));
+            const usert = playert.query(new Circle(user.x, user.y, 2 * rad));
+            
+            for (const drop of drops) {
+                let x = drop.x;
+                let y = drop.y;
+                let i = drop.data.i;
+
+                // eat food
+                if (
+                    circCircCol(
+                        x, y, 8,
+                        user.x, user.y, rad
+                    )
+                ) {
+                    let nx = Math.random() * 1000;
+                    let ny = Math.random() * 500;
+
+                    food[i] = [nx, ny];
+                    move({ x, y, i }, { nx, ny });
+
+                    if (user.score > 15) user.score += Math.floor(Math.random() * 4 - 1);
+                    else user.score++;
+                }
+            }
+
+            for (const other of usert) {
+                const otherId = other.data.id;
+                const otherScore = other.data.score;
+                if (otherId == id || otherScore <= user.score) continue;
+
+                // guaranteed you will die!!
+                if (
+                    circCircCol(
+                        other.x, other.y, 30 * (1 + otherScore / 100),
+                        user.x, user.y, rad
+                    )
+                ) {
+                    users[otherId].score += Math.floor(user.score / 2);
+
+                    playert.remove(user.x, user.y);
+                    delete users[id];
+
+                    broadcast(`leave:${id}`);
+
+                    socket.send(`die:${other.data.name}`);
+
+                    socket.close();
+                    break;
+                }
+            }
+
+            if (user.score > 120) user.score -= Math.floor(user.score / 500);
+            
+            socket.send(`pos:${user.x},${user.y},${user.score}`);
+            */

@@ -1,0 +1,22 @@
+compile = "javac -classpath .:target/dependency/ -d . $(find . -type f -name '*.java')"
+run = ["java", "-classpath", ".:target/dependency/*", "Main"]
+
+entrypoint = "Main.java"
+
+[packager]
+language = "java"
+
+[packager.features]
+packageSearch = true
+
+[languages.java]
+pattern = "**/*.java"
+
+[languages.java.languageServer]
+start = ["jdt-language-server"]
+
+[unitTest]
+language = "java"
+
+[nix]
+channel = "stable-21_11"

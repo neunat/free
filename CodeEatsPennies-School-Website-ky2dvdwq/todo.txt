@@ -1,0 +1,40 @@
+make sure development php server is safe
+
+Make sure database is safe
+
+Add 404 page
+
+3d printed tactile maps?
+
+Make it easily downloadable (internet at school is iffy) 
+
+offline pwa
+
+2d map 
+
+hallway names
+
+A way to show a path through the school to a selected room(Pathfinding Algorithim)
+
+an easy way to edit so that if/when teachers leave, we can easily update room information, also update for each term (also in case of maintenance, closures, and accidential misinformation)
+
+Make a google form to report mistakes
+
+add where you can get food for lunch- lunch menus?
+
+Find a way to hide the database from searching  https://school-website.codeeatspennies.repl.co/database.xml, if no way, just rename to something 
+
+Add a base image of school (map), on every room page load that base image and load an image map overlay to find a path there
+
+Ask where the user is in the school, set a cookie, ask when finding a route to somewhere in the school, draw path from place they set to room they want to go to
+
+Talk to admininstration, host a volunteering oppurtunity for Spanish, German, French, and Chinese students to translate website content (mainly Spanish)
+
+
+
+
+
+Banner to oasd homepage, announcements and such
+
+Make a Teacher and Room page
+

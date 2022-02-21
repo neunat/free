@@ -1,0 +1,13 @@
+{ pkgs }: {
+	deps = [
+		pkgs.python38
+	];
+  env = {
+    LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+      # Neded for pandas / numpy
+      pkgs.stdenv.cc.cc.lib
+      pkgs.zlib
+    ];
+    PYTHONBIN = "${pkgs.python38}/bin/python3.8";
+  };
+}

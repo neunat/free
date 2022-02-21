@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Login</h2>
+  <hr style="background-color:#00a9e2;width:75%;height:5px;border-radius:5px;opacity:1;border:hidden;">
+  <form method="post" class="snlg-form">
+    <h4>Username</h4>
+    <input class="form-control me-2" name="username" placeholder="Username" required>
+    {% if problem == "username" %}
+    <br>
+    <p style="color:red;">{{prompt}}</p>
+    {% endif %}
+    <br>
+    <h4>Password</h4>
+    <input class="form-control me-2" name="password" placeholder="Password" type="password" required>
+    {% if problem == "password" %}
+    <br>
+    <p style="color:red;">{{prompt}}</p>
+    {% endif %}
+    <br>
+    <button class="btn btn-primary" type="submit">Login</button>
+  </form>
+{% endblock %}

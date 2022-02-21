@@ -1,0 +1,2 @@
+use io.println;
+println("Happy new years from Europa!");

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Visualisations</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="small.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet alternate" type="text/css" href="hc.css" title="High Contrast"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+    <script src="util.js"></script>
+</head>
+<body>
+    <nav>
+        <button class="all curr">Overall Stats</button>
+        <button class="ind">Individual Stats</button>
+    </nav>
+
+    <div class="page page-all">
+        <h1>Overall Completion Rate</h1>
+        <p>This graph shows the average completion time for each day. Note it <em>doesn't</em> account for people who did the challenge the day after.</p>
+
+        <div class="center">
+            <div class="all-cont">
+                <canvas id="all"></canvas>
+            </div>
+        </div>
+
+        <h1>Stats</h1>
+        <p><span class="part1">Silver</span> means part 1, and <span class="part2">Gold</span> means part 2 completion.</p>
+        <div class="flex">
+            <div>
+                <h2>Average</h2>
+                <p class="part1"><em class="mean1">...</em> seconds</p>
+                <p class="part2"><em class="mean2">...</em> seconds</p>
+                <h2>Standard Deviation</h2>
+                <p class="part1"><em class="sd1">...</em> seconds</p>
+                <p class="part2"><em class="sd2">...</em> seconds</p>
+            </div>
+            <div>
+                <h2>Median</h2>
+                <p class="part1"><em class="median1">...</em> seconds</p>
+                <p class="part2"><em class="median2">...</em> seconds</p>
+                <h2>IQR</h2>
+                <p class="part1"><em class="iqr1">...</em> seconds</p>
+                <p class="part2"><em class="iqr2">...</em> seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-ind" hidden>
+        <h1>Individual Completion Rate</h1>
+        <p>This shows the individual completion rate of a select coder. Note it <em>doesn't</em> account for people who completed the puzzle the day after.</p>
+        <p>Select User: <select class="names"></select></p>
+        
+        <div class="center">
+            <div class="ind-cont">
+                <canvas class="ind-canvas"></canvas>
+            </div>
+        </div>
+
+        <h1>Stats</h1>
+        <p><span class="part1">Silver</span> means part 1, and <span class="part2">Gold</span> means part 2 completion.</p>
+        <div class="flex">
+            <div>
+                <h2>Average</h2>
+                <p class="part1"><em class="imean1">...</em> seconds</p>
+                <p class="part2"><em class="imean2">...</em> seconds</p>
+                <h2>Standard Deviation</h2>
+                <p class="part1"><em class="isd1">...</em> seconds</p>
+                <p class="part2"><em class="isd2">...</em> seconds</p>
+            </div>
+            <div>
+                <h2>Median</h2>
+                <p class="part1"><em class="imedian1">...</em> seconds</p>
+                <p class="part2"><em class="imedian2">...</em> seconds</p>
+                <h2>IQR</h2>
+                <p class="part1"><em class="iiqr1">...</em> seconds</p>
+                <p class="part2"><em class="iiqr2">...</em> seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

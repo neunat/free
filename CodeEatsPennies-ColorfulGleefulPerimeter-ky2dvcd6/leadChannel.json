@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "name": "Web Form"
+    },
+    {
+        "id": 1,
+        "name": "LinkedIn Corporate"
+    },
+    {
+        "id": 2,
+        "name": "LinkedIn Self-Prospect"
+    },
+    {
+        "id": 3,
+        "name": "Tawk.to Chat"
+    },
+    {
+        "id": 4,
+        "name": "ECM Campaign"
+    },
+    {
+        "id": 5,
+        "name": "Paid Search"
+    },
+    {
+        "id": 6,
+        "name": "Mailer Campaign"
+    },
+    {
+        "id": 7,
+        "name": "Sponsored Event"
+    },
+    {
+        "id": 8,
+        "name": "Trade Show"
+    },
+    {
+        "id": 9,
+        "name": "Self-Prospected"
+    }
+]

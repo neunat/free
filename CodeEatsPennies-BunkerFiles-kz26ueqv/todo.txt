@@ -1,0 +1,9 @@
+Encrypt each file individually
+
+Offer option to use password ot private key (add option to get from usb key)
+
+Citadel includes secure workstation of custom secure linux
+
+citadel has an option to encrypt usb, and plug it back into citadel and it will decrypt it for you
+
+citadel has a robot that goes around the house (like roomba or house cat) with camera and sensors

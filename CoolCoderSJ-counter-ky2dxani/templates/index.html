@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Counter</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf-8">
+            var socket = io();
+
+            socket.on('connect', function() {
+                socket.emit('request_for_value');
+            });
+
+            socket.on("set", function(msg) {
+                document.getElementById("number").innerHTML = msg;
+                document.getElementById("number").
+            })
+            
+            function emitUp() {
+                var socket = io();
+                socket.emit("value", Number(document.getElementById("number").innerHTML)+1)
+            }
+
+            function emitDown() {
+                var socket = io();
+                socket.emit("value", Number(document.getElementById("number").innerHTML)-1)
+            }
+            
+            function emitReset() {
+                var socket = io();
+                socket.emit("value", 0)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="number">0</h1>
+        <button onclick="emitUp()" id="upbtn">+ 1</button>
+    </body>
+</html>

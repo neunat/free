@@ -1,0 +1,11 @@
+Type all your option with no spaces and there are the Super Mario insturctions 
+To move you will have type mvoe
+To move backwards you will have to type back
+To jump you have to type jump 
+To long jump you will have to put movejump
+To do a backwards jump you will hvae to put back jump
+There will be four level per world
+There are 4 world in total
+At the end of each world you will face a boss
+To exit at ant time type eback
+ 

@@ -1,0 +1,16 @@
+{% extends "userbar.html" %}
+{% block content %}
+  <h2>Feedback</h2>
+  <hr style="background-color:#00a9e2;width:75%;height:5px;border-radius:5px;opacity:1;border:hidden;">
+  <form method="post">
+    <h4>Your feedback</h4>
+    <textarea style="height:150px;" class="form-control me-2" name="feedback" placeholder="Feedback"></textarea>
+    <br>
+    <h4>Rating</h4>
+    <div class="input-group" style="width:200px;">
+      <input style="width:100px;" class="form-control" name="rating" placeholder="Rating" type="text">
+      <span class="input-group-text">/</span>
+      <span class="input-group-text">5</span>
+    </div>
+  </form>
+{% endblock %}

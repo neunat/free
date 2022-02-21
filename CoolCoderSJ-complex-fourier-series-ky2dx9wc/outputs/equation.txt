@@ -1,0 +1,1 @@
+(3cos(-3t)-1cos(-t)-3sin(-t)+8-7cos(t)-2sin(t)-2cos(3t)-3sin(3t),3sin(-3t)-1sin(-t)+3cos(-t)+10-7sin(t)+2cos(t)-2sin(3t)+3cos(3t))

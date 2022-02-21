@@ -1,0 +1,20 @@
+// Helper functions and definitons.
+// Yet to be implemented `include`, `macro`, stack mods, and `syscall(n)` needs to be working first
+macro stdin 0 end
+macro stdout 1 end
+macro stderr 2 end
+
+macro write 1 syscall3 end
+macro exit 60 syscall1 drop end
+
+macro fputs
+  write drop
+end
+
+macro puts
+  stdout fputs
+end
+
+macro eputs
+  stderr fputs
+end

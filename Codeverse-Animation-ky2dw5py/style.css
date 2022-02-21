@@ -1,0 +1,57 @@
+:root {
+  --dark-color: #209DFF;
+  --light-color: #8FEBFF;
+}
+
+svg {
+  cursor: inherit;
+}
+
+#darks {
+  fill: var(--dark-color);
+}
+
+#light1 {
+  fill: var(--light-color);
+}
+
+#dark1, #light1, #dark2 {
+  transition: all 1s ease;
+}
+
+#dark2 {
+  transform: translateX(-100%);
+}
+
+svg:hover #light1 {
+  transform: translateX(20%);
+}
+
+svg:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+
+svg:hover #dark2 {
+  transform: translateX(20%);
+}
+
+#cc, #sectext {
+  fill: #000000;
+}
+
+#cc, #sectext {
+  transition: all 3.5s ease;
+}
+
+svg:hover #cc {
+  fill: #FFFFFF;
+}
+
+svg:hover #sectext {
+  fill: #FFFFFF;
+}
+
+svg:active #whole-phone {
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Food Label Generator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/nutrition-label-jquery-plugin@11.0.8/dist/css/nutritionLabel-min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nutrition-label-jquery-plugin@11.0.8/dist/js/nutritionLabel-min.js"></script>
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+      <link href="https://easycss.bookie0.repl.co/light.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <h5 style="text-align: center;">Created By Shuchir Jain</h5>
+    <div class="form">
+        <input type="text" placeholder="Meal Name">
+        <input type="text" placeholder="Calories">
+        <input type="text" placeholder="Calories from Fat">
+        <input type="text" placeholder="Total Fat (g)">
+        <input type="text" placeholder="Saturated Fat (g)">
+        <input type="text" placeholder="Cholestrol (mg)">
+        <input type="text" placeholder="Protein (g)">
+        <input type="text" placeholder="Carbohydrates (g)">
+        <input type="text" placeholder="Dietary Fibers (g)">
+        <input type="text" placeholder="Sugars (g)">
+        <input type="text" placeholder="Potassium (mg)">
+        <input type="text" placeholder="Sodium (mg)">
+        <input type="text" placeholder="Vitamin A (%)">
+        <input type="text" placeholder="Vitamin C (%)">
+        <input type="text" placeholder="Calcium (%)">
+        <input type="text" placeholder="Iron (%)">
+        <input type="text" placeholder="Ingredient List">
+    </div>
+
+      <center><button id="generate" style="background: black; color: white;">Generate</button><button id="download" style="background: black ; color: white;" onclick="downloadimage()">Download (Click only after Generate)</button></center>
+      <div id="nutritionlabel" style="margin-left: 20px;">
+      </div>
+       <div id="previewImage" style="margin-left: 20px;"></div>
+    <script>
+        function downloadimage() {
+                /*var container = document.getElementById("image-wrap");*/ /*specific element on page*/
+                var container = document.getElementById("nutritionlabel");; /* full page */
+                html2canvas(container, { allowTaint: true }).then(function (canvas) {
+
+                    var link = document.createElement("a");
+                    document.body.appendChild(link);
+                    link.download = "html_image.jpg";
+                    link.href = canvas.toDataURL();
+                    link.target = '_blank';
+                    link.click();
+                });
+            }
+        
+        $(document).ready(function() {
+    
+            $("#generate").click(function(){
+    
+                $('#nutritionlabel').nutritionLabel({
+                	showServingUnitQuantity : false,
+                    hideTextboxArrows : true,
+                	itemName : document.getElementsByTagName("input")[0].value,
+                	ingredientList : document.getElementsByTagName("input")[16].value,
+                
+                	decimalPlacesForQuantityTextbox : 2,
+                	valueServingUnitQuantity : 1,
+                
+                	allowFDARounding : false,
+                	decimalPlacesForNutrition : 2,
+                
+                	showPolyFat : false,
+                	showMonoFat : false,
+                    showTransFat: false,
+                    showPotassium: true,
+                    showVitaminD: true,
+                
+                	valueCalories : document.getElementsByTagName("input")[1].value,
+                	valueFatCalories : document.getElementsByTagName("input")[2].value,
+                	valueTotalFat : document.getElementsByTagName("input")[3].value,
+                	valueSatFat : document.getElementsByTagName("input")[4].value,
+                	valueCholesterol : document.getElementsByTagName("input")[5].value,
+                	valueSodium : document.getElementsByTagName("input")[11].value,
+                	valueTotalCarb : document.getElementsByTagName("input")[7].value,
+                	valueFibers : document.getElementsByTagName("input")[8].value,
+                    valuePotassium : document.getElementsByTagName("input")[10].value,
+                	valueSugars : document.getElementsByTagName("input")[9].value,
+                	valueProteins : document.getElementsByTagName("input")[6].value,
+                	valueVitaminA : document.getElementsByTagName("input")[12].value,
+                	valueVitaminC : document.getElementsByTagName("input")[13].value,
+                	valueCalcium : document.getElementsByTagName("input")[14].value,
+                	valueIron : document.getElementsByTagName("input")[15].value
+                });
+
+            }); 
+
+        });
+
+    </script>
+  </body>
+</html>

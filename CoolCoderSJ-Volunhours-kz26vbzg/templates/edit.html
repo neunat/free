@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>VolunHours</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/mobiscroll.min.css">
+        <link rel="stylesheet" href="/static/styles.css">
+        <script src="/static/mobiscroll.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    
+    <body>
+       <div class="sidebar" style="height: 125%;">
+           <div><ion-icon class="clockicon" name="time-outline" style="margin-bottom:10px;"></ion-icon> <span class="text">VolunHours</span></div>
+           <a class="sidelink" href="/"><ion-icon name="home-outline" style="font-size: 1.5rem;margin-bottom: 5px;"></ion-icon> Home</a>
+           <a class="sidelink active" href="/log"><ion-icon name="log-in-outline" style="font-size: 1.5rem;margin-bottom: 5px;"></ion-icon> Log Hours</a>
+           <a class="sidelink" href="/hours"><ion-icon name="stats-chart-outline" style="font-size: 1.5rem;margin-bottom: 5px;"></ion-icon> Previous Hours</a>
+           <a class="sidelink" href="/admin"><ion-icon name="people-outline" style="font-size: 1.5rem;margin-bottom: 5px;"></ion-icon> Admin Panel</a>
+           <a class="sidelink" href="/summary"><ion-icon name="list-circle-outline" style="font-size: 1.5rem;margin-bottom: 5px;"></ion-icon> Summary</a>
+       </div>
+
+        <main>
+            <form method="post" action="/edit/{{ id }}" style="display: flex; flex-direction: row; gap: 30px;">
+            
+            <div>
+            <h1 style="text-align: center;">Start Time</h1>
+            <input id="start" type="hidden" name="start" />
+            <h1 style="text-align: center;">End Time</h1>
+            <input id="end" type="hidden" name="end" />
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <textarea rows="5" style="width: 140%" name="activity" placeholder="What were you doing...?">{{ card['activity'] }}</textarea>
+                <button class="btn" style="height: auto; width: 140%">Save</button>
+            </div>
+
+            <input type="hidden" name="id" value="1" />
+            </form>
+
+            
+            <script>
+
+                function strtodt (string) {
+                    let [month, day, year] = string.split(" ")[0].split("/")
+                    let [hour, minute] = string.split(" ")[1].split(":")
+                    let amvspm = string.split(" ")[2]
+                
+                    month = Number(month)
+                    day = Number(day)
+                    year = Number(year)
+                    hour = Number(hour)
+                    minute = Number(minute)
+                
+                    if (amvspm == "PM") {
+                        hour = hour + 12
+                    }
+
+                    month = month - 1
+                    
+                    return new Date(year, month, day, hour, minute)
+                }
+
+                console.log(strtodt("{{ card['start'] }}"))
+        
+                
+                mobiscroll.setOptions({
+                    locale: mobiscroll.localeEn,         
+                    theme: 'material',                   
+                    themeVariant: 'light'                
+                });
+                mobiscroll.datepicker('#start', {
+                    display: 'inline',
+                    controls: ['calendar', 'timegrid'],
+                    min: '2021-08-01T00:00',
+                    max: '2022-12-31T00:00',
+                    minTime: '08:00',
+                    maxTime: '23:59',
+                    stepMinute: 15,
+                    invalid: [],
+                    defaultSelection: strtodt("{{ card['start'] }}")
+                });
+
+                mobiscroll.datepicker('#end', {
+                    display: 'inline',
+                    controls: ['calendar', 'timegrid'],
+                    min: '2021-08-01T00:00',
+                    max: '2022-12-31T00:00',
+                    minTime: '08:00',
+                    maxTime: '23:59',
+                    stepMinute: 15,
+                    invalid: [],
+                    defaultSelection: strtodt("{{ card['end'] }}")
+                });
+
+                setInterval(() => {
+                all_divs = document.getElementsByTagName("div")
+                for (let i=0; i<all_divs.length; i++) {
+                    if (all_divs[i].innerHTML === "TRIAL") {
+                        all_divs[i].remove()
+                    }
+                }
+                }, 100)
+            </script>
+        </main>
+    </body>
+</html>

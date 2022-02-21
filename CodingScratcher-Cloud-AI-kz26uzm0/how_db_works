@@ -1,0 +1,41 @@
+vCOMMANDS
+Import
+the database
+from replit import db
+
+Insert →
+Set
+a key to a value
+db["
+key
+"] = "
+value
+"
+
+Insert →
+Get
+a key's value
+value = db["
+key
+"]
+
+Insert →
+Delete
+a key
+del db["
+key
+"]
+
+Insert →
+List
+all keys
+keys = db.keys()
+
+Insert →
+List
+keys with a prefix
+matches = db.prefix("
+prefix
+")
+
+Insert →

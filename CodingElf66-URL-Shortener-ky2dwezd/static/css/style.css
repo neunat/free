@@ -1,0 +1,59 @@
+* {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  font-size: 17px;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: url("https");
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #96c7ff, #427eff, #1e3ffc, #000272, #0b0144, #000003);
+  background-size: 400% 400%;
+}
+
+h2 {
+  text-shadow: 0px 0px 40px #00a9e2;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #110956;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0733;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #090050;
+}
+
+.url {
+  background: darkblue;
+  color: white;
+  width: 400px;
+  height: 27px;
+  border-radius: 5px;
+  transform: translate(-50px,0);
+}
+
+.url:hover {
+  background: #11148f;
+}
+
+#copybutton {
+  transform: translate(210px,-45px);
+}

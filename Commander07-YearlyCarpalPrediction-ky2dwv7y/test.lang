@@ -1,0 +1,2 @@
+// String example
+"Hello, " "World!" + print

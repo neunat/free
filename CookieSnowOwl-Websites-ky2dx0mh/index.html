@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form id = "Linkform" onsubmit="formStart(event)">
+  			<textarea id = "textare" name="Link" placeholder = "https://www.example.com" rows="6" columns = "50" required></textarea>
+  			<input type="submit" name="LinkOutput" value = "LinkOutput" id="LinkOutput">
+		</form>
+
+
+		<script defer>
+      function formStart(e) {
+  		  e.preventDefault()
+  			let iscorrectForm = false;
+  			let lengthOfForms = document.forms.length;
+        		for (let i = 0; i < lengthOfForms; i++) {
+            		if (iscorrectForm.id == "Linkform") {
+          	      	iscorrectForm = document.forms[i];
+            		}
+        		}//what why, also, there is this function called i know i just copied from stackoverflow ehe"indexof" or "index" or smth ok
+        console.log("hi")
+
+  			let answered = iscorrectForm.Link.value; //no idea what somefieldname is  (its now called textare)
+  			let user_input = document.createTextNode(answered)
+  			document.body.appendChild(user_input)
+      }
+		</script>
+
+	</body>
+</html>

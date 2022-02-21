@@ -1,0 +1,6 @@
+/*
+modules:
+    client
+    parser
+    action
+*/

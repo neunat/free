@@ -1,0 +1,25 @@
+* {
+  background-color: #333;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+free {
+  color: white;
+  -webkit-transition: color 500ms linear;
+}
+free:hover {
+  color: greenyellow;
+  -webkit-transition: color 500ms linear;
+}
+
+button {
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: green;
+  -webkit-transition: background-color 500ms linear;
+}
+button:hover {
+  background-color: lime;
+  -webkit-transition: background-color 500ms linear;
+}

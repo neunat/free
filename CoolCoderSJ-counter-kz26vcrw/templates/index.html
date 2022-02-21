@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Counter</title>
+        
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="static/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf-8">
+            var socket = io();
+
+            socket.on('connect', function() {
+                socket.emit('request_for_value');
+            });
+
+            socket.on("set", function(msg) {
+                document.getElementById("number").innerHTML = msg;
+            })
+            
+            function emitUp() {
+                var socket = io();
+                socket.emit("value", Number(document.getElementById("number").innerHTML)+1)
+                document.getElementById("upbtn").setAttribute("disabled", "");
+            }
+
+            function emitDown() {
+                var socket = io();
+                socket.emit("value", Number(document.getElementById("number").innerHTML)-1)
+            }
+            
+            function emitReset() {
+                var socket = io();
+                socket.emit("value", 0)
+            }
+        </script>
+    </head>
+    <body>
+        <div id="card">
+        <h1 id="number">0</h1>
+        {% if not hasClicked %}
+        <button onclick="emitUp()" id="upbtn">+ 1</button>
+        {% endif %}
+        </div>
+    </body>
+</html>

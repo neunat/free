@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Happy New Year 2022</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎊</text></svg>">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/*html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#FFDF00, #FFB70D);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*/
+
+html {
+    cursor: pointer;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #FFDF00;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left top, #FFDF00, red);
+    background: -moz-linear-gradient( to left top, #FFDF00, #FFB70D);
+    background: -ms-linear-gradient( to left top, #FFDF00, #FFB70D);
+    background: -o-linear-gradient( to left top, #FFDF00, #FFB70D);
+    background: linear-gradient( to left top, #FFDF00, #FFB70D);
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  background: -webkit-linear-gradient(#FFF08D, rgb(241, 223, 121));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  width: 100vh;
+  text-align: center;
+  animation: jump-in 2s;
+  transition: transform .4s;
+}
+
+.head:hover {
+  transform: scale(1.1);
+}
+
+@keyframes jump-in {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+#c {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.congrats {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background: -webkit-linear-gradient(#FFF08D, rgb(241, 223, 121));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  animation: auto 1s ease, go-in 1s ease 2.5s;
+}
+
+@keyframes go-in {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes auto {
+  from, to {opacity: 0}
+}
+
+.content {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <div class="content">
+      <div class="head">Happy New Year 2022!</div>
+    </div>
+    <script>
+    //confetti.create(document.getElementById("c"))
+
+var myCanvas = document.getElementById("c");
+
+var myConfetti = confetti.create(myCanvas, {
+  resize: true,
+  useWorker: true
+});
+
+function confettifunc() {
+  myConfetti({
+    particleCount: 500,
+    spread: 100
+  });
+}
+
+setTimeout(confettifunc, 3000)
+
+setTimeout(function() {
+  document.querySelector(".head").addEventListener("click", confettifunc);
+}, 3000);
+</script>
+  </body>
+</html>

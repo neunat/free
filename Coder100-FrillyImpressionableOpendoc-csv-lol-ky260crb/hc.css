@@ -1,0 +1,14 @@
+* {
+   background: white!important;
+   color: black!important;
+   text-shadow: none!important;
+}
+
+a {
+   color: blue!important;
+   text-decoration: underline!important;
+}
+
+em {
+   font-weight: 900!important;
+}

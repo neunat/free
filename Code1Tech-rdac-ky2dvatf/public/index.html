@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Replit Database Admin Console</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <br>
+    <div class="uk-container">
+      <h3>Replit Database Admin Console (unofficial)</h3>
+      <p>Replit Database URL:</p>
+      <p><i>To obtain this, open your repl and go to the Shell tab (next to the console tab). Then, type <code>$REPLIT_DB_URL</code> and paste the URL here.</i></p>
+
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: link"></span>
+          <input class="uk-input uk-form-width-medium" type="text" placeholder="Replit Database URL" id="databaseURL">
+          <button class="uk-button uk-button-primary" onclick="loadDatabase()">Load database</button>
+        </div>
+      </div>
+
+      <br>
+
+      <p>Database:</p>
+
+      <table class="uk-table uk-table-divider">
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Value</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="database-table-body">
+
+        </tbody>
+      </table>
+
+      <br><br>
+
+      <button id="addButton" style="display: none;" class="uk-button uk-button-primary" onclick="addKey()">Add a new key</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

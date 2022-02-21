@@ -1,0 +1,40 @@
+I was playing Cookie Clicker the other day, and I forgot how much fun a Javascript game could be. Even without too much animation, Cookie Clicker is such a fun game! I thought, maybe using a bit of SVG animation and simple scripting, I could make a fun game too. It has been a while since I've invested this much time into a game, and I hope I can finish the idea. 
+
+Items and Ideas:
+
+Libraries: 
+
+JQuery
+P5.JS (Controlled Canvas)
+P5.TouchGUI.JS (For Interactive Gameplay)
+
+Game Functions:
+
+Procedure:
+(Money is Invade Tokens)
+
+1. Create Name (Show that a species has come into Brazil)
+2. Attack Native Species
+3. Get Money from killing the Species
+4. Use money to buy invasive Species
+5. The invasive species starts out powerless, but you
+can add (potency, power, mating speed, spreading speed)
+6. Have a bar that shows how much it has killed and spread.
+
+Native species (Brazil - Level 1):
+
+Name - Health - Money - Speed to Kill in Seconds
+
+Jaguar - 2000
+Capybara - 1500
+Cougar - 3000
+Tamarin - 500
+Anteater - 100
+Ocelot - 30
+Macaw - 59
+Rhea - 75
+Toad - 10
+Toucan - 40
+Puma - 3000
+Anaconda - 10000
+Sloths - 200

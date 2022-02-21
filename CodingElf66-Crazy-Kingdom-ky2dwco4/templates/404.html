@@ -1,0 +1,21 @@
+{% if logged_in == "true" %}
+{% extends "userbar.html" %}
+{% else %}
+{% extends "navbar.html" %}
+{% endif %}
+{% block title %}ReplMail{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="/static/css/style.css">
+{% endblock %}
+{% block content %}
+  <center>
+    <h2>404 Error</h2>
+    <hr style="color:blue; height:5px; border-radius:5px; width:600px;">
+    <p>Page Not Found.</p>
+    {% for i in range(22) %}
+    <br>
+    {% endfor %}
+    <br>
+    <p style="font-size:15px;">Mistake? Return to the homepage <a href="/">here</a>.</p>
+  </center>
+{% endblock %}

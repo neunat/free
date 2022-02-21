@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake test</title>
+   
+</head>
+<body>
+    <script>
+         var table = document.createElement("table");
+
+        var size = 20
+
+        var tHeight = window.innerHeight/size/1.3
+        var tWidth = window.innerWidth/size/1.3
+
+        function getRandomInt(min,max) {
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+
+        for(var i=0;i<tHeight;i++) { 
+            var row = document.createElement("tr");
+            for(var c=0;c<tWidth;c++) {
+                var cell = document.createElement("td");
+
+                cell.id = `${i}-${c}`;
+                cell.innerHTML = "&nbsp;";
+
+                cell.width = size+"px"
+                cell.height = size+"px"
+                cell.style.fontSize = size+"px"
+
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+
+        document.body.appendChild(table);
+
+        function getCell(x,y) {
+            return document.getElementById(`${y}-${x}`);
+        }
+
+        var appleCount = 20;
+        var apples = [];
+
+        function newApple() {
+            var apple = [ getRandomInt(0,tWidth-1), getRandomInt(0,tHeight-1) ];
+            apples.push(apple);
+            getCell(...apple).innerHTML = "*"
+        }
+
+        for(var a=0;a<appleCount;a++) newApple();
+
+        var me = {
+            pos: {x:0,y:0},
+            dir: "right",
+            length: 10,
+            score: 0
+        }
+
+        function update(me) {
+            switch (me.dir) {
+                case "right":
+                    me.pos.x++;
+                    break;
+                case "left":
+                    me.pos.x--;
+                    break;
+                case "up":
+                    me.pos.y--;
+                    break;
+                case "down":
+                    me.pos.y++;
+                    break;
+            }
+        }
+
+        function death() {
+            clearInterval(loop)
+            alert("You died! You got " + me.score + " points!");
+        }
+
+        var trail = []
+        trail.push(Object.values(me.pos))
+
+        var loop = setInterval(() => {
+            if(!getCell(me.pos.x, me.pos.y)) death();
+            if(getCell(me.pos.x, me.pos.y).innerHTML == "#" ) death();
+
+            else {
+                if(getCell(me.pos.x, me.pos.y).innerHTML == "*") {
+                    me.score++;
+                    newApple();
+                    me.length += 10
+                }
+
+                getCell(me.pos.x, me.pos.y).innerHTML = "#"
+                trail.push(Object.values(me.pos))
+
+                if(trail.length > me.length) {
+                    var cell = getCell(...trail[0]);
+                    cell.innerHTML = ""
+                    trail.shift()
+                }
+
+                update(me);
+            }
+        }, 50);
+
+
+
+        document.addEventListener("keydown", (e) => {
+
+            var opposites = {  
+                up: "down",
+                down: "up",
+                left: "right",
+                right: "left"
+            }
+
+            if(e.key.substr(0,5) != "Arrow") return;
+            var key = e.key.substr(5).toLowerCase();
+            if((opposites[key] !== me.dir)) me.dir = key;
+        })
+</script>
+</body>
+</html>

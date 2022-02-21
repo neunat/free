@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+</head>
+<body>
+
+    <script type="module">
+
+
+var aiLerp = 0.1
+        // import kaboom lib
+        import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
+        
+        // initialize kaboom context with yellow background
+        kaboom({
+            background: [255,255,0]
+        });
+
+        // add some paddles
+
+
+        //player paddle
+        add(
+            [
+                pos(40,0),
+                rect(20,80),
+                outline(5),
+                origin("center"),
+                area(),
+                "player",
+                "paddle"
+            ]
+        )
+        
+        //ai paddle
+        add(
+            [
+                pos(width()-40,0),
+                rect(20,80),
+                outline(5),
+                origin("center"),
+                area(),
+                "ai",
+                "paddle"
+            ]
+        )
+
+        //paddle movement
+        onUpdate("player", (p) => {
+            p.pos.y = mousePos().y;
+        })
+
+        onUpdate("ai", (p) => {
+            p.pos.y = lerp(p.pos.y, ball.pos.y, 0.1);
+        })
+
+        let ballSpeed = 700;
+
+        //[ourScore, aiScore]
+        var score = [0,0];
+
+        //add score text
+
+        add([
+            text(score.join(" - ")),
+            pos(center()),
+            origin("center"),
+            z(50),
+            { update() {
+                this.text = score.join(" - ");
+            } }
+        ])
+
+        const ball = add([
+            pos(center()),
+            circle(16),
+            outline(4),
+            area({ width: 32, height: 32, offset: vec2(-16)}),
+            {vel: dir(rand(-50,50))},
+            "ball"
+        ])
+
+        //ball update
+        onUpdate("ball", (b) => {
+            b.move(b.vel.scale(ballSpeed));
+            if(b.pos.x < 0 || b.pos.x > width()) {
+                //ball out of bounds
+                if(b.pos.x < 0) {
+                    score[1]++;
+                    aiLerp -= 0.01
+                    aiLerp = Math.max(0.01, aiLerp)
+                } else {
+                    score[0]++;
+                    aiLerp += 0.01
+                    aiLerp = Math.min(0.5, aiLerp)
+                }
+                //reset game
+                b.pos = center();
+                b.vel = dir(rand(-50,50));
+                ballSpeed = 700;
+            }
+
+            //check if hitting ceiling or ground
+            if (b.pos.y < 0 || b.pos.y > height()) {
+                b.vel.y *= -1;
+            }
+        })
+
+        //ball collision
+
+        ball.onCollide("paddle", (p) => {
+            ballSpeed += 50;
+            ball.vel = dir(ball.pos.angle(p.pos))
+        })
+
+        
+        </script>
+    
+</body>
+</html>

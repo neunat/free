@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name= "description" content="Example Calculator"></meta>
+    <meta name=viewpoint content="width=device-width, initial"></meta>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <title></title>
+    <nav class="navtop">
+        <div class="btn-side-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Current</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Pipeline</a></li>
+        </ul>       
+    </nav>
+
+    <aside class="nav_sidebar">
+        <ul>
+            <li><span>Projects</span></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </aside>
+
+    <form>
+        Value 1: <input type="text" id="value1">
+        Value 2: <input type="text" id="value2">
+        Operator: 
+        <select id="operator">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="mult">Multiply</option>
+            <option value="div">Divide</option>
+        </select>
+        <button type="button" onclick="calc()">Calculate</button>
+    </form>
+    <div id="return"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+	<link rel="manifest" href="static/img/site.webmanifest">
+	<title>Markdown Editor</title>
+</head>
+<body>
+	<div class="output">
+		{{final_md | safe}}
+	</div>
+	<div class="editor">
+		<form action="{{ url_for('submit') }}" method="post">
+				<textarea name="text" id="text" placeholder="Markdown goes here..."></textarea>		
+				<input type="submit" class=btn value="Generate Markdown">
+		</form>
+	</div>
+
+	<style>
+		div {
+		background-color: #1e2838;
+		padding: 10px;
+	}
+	textarea {
+		margin: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		border: 0 none white;
+		outline: none;
+		width: 94%;
+		height: 88%;
+		resize: none;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 6px;
+		background-color: #304059;
+		font-size: 18px;
+		box-shadow:25px rgb(146, 146, 146);
+		padding: 0.5em;
+		color: white;
+	}
+
+	.editor {
+		float: left;
+		width: 47%;
+		height: 96%;
+		padding: 20px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 6px;
+	}
+
+	.output {
+		float: right;
+		width: 47%;
+		height: 96%;
+		padding: 20px;
+		color: white;
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 6px;
+		overflow: scroll;
+	}
+
+	.btn {
+	background-color: #304059;
+	padding: .5em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 6px;
+	color: white;
+	width: 94%;
+	margin: 20px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	font-family: 'Oswald';
+	font-size: 20px;
+	text-decoration: none;
+	border: none;
+  outline:none;
+	}
+	.btn:hover {
+	border: none;
+	background: white;
+	box-shadow: 0px 0px 1px #777;
+	color: black;
+	}
+		
+		blockquote {
+		background: #4c5563;
+		border-left: 7px solid #ccc;
+		margin: 1.5em 10px;
+		padding: 0.5em 10px;
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		}
+		blockquote:before {
+		color: #ccc;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+		}
+		blockquote p {
+		display: inline;
+		}
+		code {
+			background-color: #4c5563;
+			color: $color-code-color;
+			border-radius: 0.3em;
+			margin-left: 10x;
+			padding: 2px 2px 2px;
+  		white-space: pre-wrap;
+		}
+	pre {
+			background-color: #4c5563;
+			color: $color-code-color;
+			border-radius: 0.3em;
+			margin-left: 10x;
+			padding: 6px 6px 6px;
+			display: block;
+  		white-space: pre-wrap;  
+	}
+
+	body {
+		background-color: #171717; 
+	}
+
+	input[type="submit"]{
+		font-family: 'Helvetica', 'Arial', sans-serif;
+	}
+
+	h1{
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(156, 156, 156, .5);
+	}
+
+	h2{
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(156, 156, 156, .5);
+	}
+	</style>
+
+	<script>
+	var note = localStorage.getItem('note');
+	document.getElementById("text").value = note;
+
+	function change() {
+		var text = document.getElementById("text");
+		localStorage.setItem('note', text.value);
+	};
+
+
+	var intervalId = window.setInterval(function(){
+		change()
+	}, 100);
+	</script>
+
+</body>
+

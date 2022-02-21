@@ -1,0 +1,36 @@
+#result {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: white;
+}
+h1 {
+    margin: 5vh auto;
+}
+.uk-button-default {
+    background-color: plum;
+}
+.link-class:hover {
+    background-color: #f1f1f1;
+}
+h1 {
+    color: plum;
+}
+input[type='text']:disabled {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.uk-list {
+    font-size: 1.2em;
+} 
+
+button {
+  margin-top: 30px;
+}
+body {
+  font-family: Roboto, Helvetica, sans-serif
+}

@@ -1,0 +1,9 @@
+12/22/21: Just started this repl up. Inspired by Raft and "Let's Game It Out"'s gameplay, I want to make something like this.
+
+You have hunger, thirst, and health stats.
+
+There will be a grid of squares, but of course, I will use vector movement instead of object movement to allow for infinite building, or until the game crashes.
+
+I might call in some friends to help as well.
+
+First, I will work on the infinite movement part.

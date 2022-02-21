@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Linguist ignore
+.github/* linguist-vendored
+*.tps linguist-generated
+*.tsx linguist-generated
+*.tmx linguist-generated
+*.json linguist-generated
+*.js linguist-generated
+*.js.map linguist-generated

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Crazy Kingdom</title>
+    <link rel="shortcut icon" href="/static/img/favicon.png/"/>
+    <link href="static/css/play.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	crossorigin="anonymous"/>
+  </head>
+  <body>
+    <center>
+      <div class="carpet">
+        <div class="question-animate">
+          {% if answered == 'false' %}
+          <p>{{question}}</p>
+          {% else %}
+          <p>{{response}}</p>
+          {% endif %}
+        </div>
+        <form method="post">
+          <button type="button" name="yes" class="yes">Yes</button>
+          <button type="button" name="no" class="no">No</button>
+        </form>
+      </div>
+      <div class="materials">
+        <div class="total-container">
+        </div>
+      </div>
+      <div class="people">
+        <div class="total-container">
+        </div>
+      </div>
+      <div class="popularity">
+        <div class="total-container">
+        </div>
+      </div>
+      <div class="gold">
+        <div class="total-container">
+        </div>
+      </div>
+      <img src={{src}} width="175" height="175" class="start-animate">
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+  </body>
+</html>

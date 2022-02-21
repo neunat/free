@@ -1,0 +1,3 @@
+ERROR:root:Broken Pipe Error. Connection Lost.
+INFO:root:Re-connected to wss://clouddata.scratch.mit.edu
+INFO:root:Re-sending the data

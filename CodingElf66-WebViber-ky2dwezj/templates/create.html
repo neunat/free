@@ -1,0 +1,22 @@
+{% extends "userbar.html" %}
+{% block content %}
+  <h2>Create Post</h2>
+  <hr style="background-color:#00a9e2;width:75%;height:5px;border-radius:5px;opacity:1;border:hidden;">
+  <form method="post">
+    <h4>Title</h4>
+    <input class="form-control me-2" name="title" placeholder="Title" required>
+    <br>
+    <h4>Description</h4>
+    <textarea style="height:150px;" class="form-control me-2" name="description" placeholder="Description of post" required></textarea>
+    <p id="note" class="form-text">Style your post with <a href="https://www.markdownguide.org/basic-syntax/">Markdown</a>!</p>
+    <br>
+    <h4>Allow comments</h4>
+    <label class="switch">
+      <input type="checkbox" name="switch" checked>
+      <span class="slider round"></span>
+    </label>
+    <br>
+    <br>
+    <button class="btn btn-primary" type="submit">Create post</button>
+  </form>
+{% endblock %}

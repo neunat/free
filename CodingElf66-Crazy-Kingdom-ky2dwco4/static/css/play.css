@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(-45deg, lightgray, lightgray, lightgray);
+  background-size: 400% 400%;
+  overflow: hidden;
+}
+
+.carpet {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: yellow;
+  width: 300px;
+  height: 810px;
+  border-radius: 10px;
+}
+
+.materials {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: yellow;
+  width: 100px;
+  height: 700px;
+  border-radius: 10px;
+  transform: translate(-500px,-750px);
+}
+
+.people {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: yellow;
+  width: 100px;
+  height: 700px;
+  border-radius: 10px;
+  transform: translate(-300px,-1450px);
+}
+
+.popularity {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: yellow;
+  width: 100px;
+  height: 700px;
+  border-radius: 10px;
+  transform: translate(300px,-2150px);
+}
+
+.gold {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: yellow;
+  width: 100px;
+  height: 700px;
+  border-radius: 10px;
+  transform: translate(500px,-2850px);
+}
+
+.total-container {
+  background-color: #a7a7a7;
+  width: 75px;
+  height: 600px;
+  border-radius: 10px;
+  transform: translate(0,50px);
+}
+
+.question-animate {
+  animation-name: question-animation;
+  animation-duration: 1s;
+  word-wrap: break-word;
+  max-width: 225px;
+  border-width: 2px;
+  border-color: black;
+  background-color: white;
+  border-radius: 5px;
+  transform: translate(0,300px);
+}
+
+@keyframes question-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.start-animate {
+  animation-name: start-animation;
+  animation-duration: 1.5s;
+  transform: translate(5px,-3200px);
+}
+
+@keyframes start-animation {
+  0% {
+    transform: translate(5px,-3000px);
+  }
+
+  100% {
+    transform: translate(5px,-3200px);
+  }
+}
+
+.yes {
+  background-color: #00ff00;
+  border-width: 2px;
+  border: solid;
+  border-color: #3fa118;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  transform: translate(-10px,600px);
+}
+
+.no {
+  background-color: red;
+  border-width: 2px;
+  border: solid;
+  border-color: #ac0000;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  transform: translate(10px,600px);
+}
+
+.yes:hover {
+  background-color: #0bec0b;
+}
+
+.no:hover {
+  background-color: #e21111;
+}

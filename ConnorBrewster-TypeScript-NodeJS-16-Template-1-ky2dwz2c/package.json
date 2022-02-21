@@ -1,0 +1,16 @@
+{
+  "name": "your-name-here",
+  "version": "0.0.0",
+  "description": "your description here",
+  "main": ".build/index.js",
+  "author": "your-name-here",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "check:types": "tsc"
+  },
+  "dependencies": {}
+}

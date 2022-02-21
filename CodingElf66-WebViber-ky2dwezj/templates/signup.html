@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Signup</h2>
+  <hr style="background-color:#00a9e2;width:75%;height:5px;border-radius:5px;opacity:1;border:hidden;">
+  <form method="post" class="snlg-form">
+    <h4>Username</h4>
+    <input class="form-control me-2" name="username" placeholder="Username" required>
+    {% if problem == "username" %}
+    <br>
+    <p style="color:red;">{{prompt}}</p>
+    {% endif %}
+    <br>
+    <h4>Password</h4>
+    <input class="form-control me-2" name="password" type="password" placeholder="Password" required>
+    <br>
+    <h4>Email</h4>
+    <input class="form-control me-2" name="email" type="email" placeholder="Email" required>
+    <p id="note" class="form-text">We respect your privacy; we won't share your email to anyone else.</p>
+    <input name="checkbox" type="checkbox" class="form-check-input" id="exampleCheck1">
+    <p class="privacy-note">You agree that we use cookies on this site only to collect your user data, and that we will not sell or give it to anyone else.</p>
+    {% if problem == "checkbox" %}
+    <p style="color:red;">{{prompt}}</p>
+    {% endif %}
+    <br>
+    <button class="btn btn-primary" type="submit">Create account</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,3 @@
+We have a search engine for room number, teachers, etc, and if you click on the link it takes you to a page about that teacher that teaches in that room
+
+which ontains information like what other classes that are taught in that room, closest bathroom, closest fire exit, closest tornado shelter, and how to get to the room from landmarks in the school

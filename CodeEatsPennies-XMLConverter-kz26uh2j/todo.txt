@@ -1,0 +1,6 @@
+add a mechanism that add/s removes room numbers
+
+Create teacher/room html page and fill in information with teacher/room name (e.g fill in the <h1> with the teacher name)
+
+Alerts and provides a summary of the changes (what pages were added/removed) (python send email with ohsmapbot@oasd.org?)
+

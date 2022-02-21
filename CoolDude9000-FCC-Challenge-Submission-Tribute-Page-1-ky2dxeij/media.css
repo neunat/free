@@ -1,0 +1,28 @@
+@media (max-width: 648px) {
+  
+}
+
+@media (max-width: 859px) {
+  img {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    max-height: 45%;
+  }
+
+  #img-div {
+    background-color:hsl(60, 59%, 80%);
+    color: hsl(60, 1%, 45%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-left: var( --margin-width);
+    margin-right: var( --margin-width);
+    border-radius: 10px;
+  }
+
+  #img-div:hover { 
+    background-color:hsl(60, 59%, 75%);
+    color: hsl(60, 1%, 30%);
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/vs2015.min.css" />
+  <title>Usage</title>
+</head>
+<body>
+  <h1>Usage</h1>
+  <p>Jsonstore2 works almost completely like jsonstore.io, and the learning curve should be very low. You will need to first obtain a <a href="/">token</a>. Keep this private, as it will give people access to your database!</p>
+
+  <h2>Overview</h2>
+  <p>In this page, <code>token</code> refers to your token, which looks like this: <code>https://jsonstore2.io/db/&lt;uuid&gt;</code></p>
+  <p>You can access data directly using <code>token</code>, but to get specific keys (which can be nested), you just need to specify the keys in a path.</p>
+  <p>For example, if your whole database was:</p>
+  <pre><code>{
+  "key": { "value": 3 }
+}</code></pre>
+  <p>To get <code>value</code>, you make a GET request to <code>token/key/value</code>.</p>
+
+  <h2>Requests</h2>
+  <p>There are 4 methods you can use to interact with the db in different ways. An important thing to note here is that each response will return a <code>json</code> output, and will have the key <code>ok</code> set to a boolean value to indicate if the request succeeded or not. An example response:</p>
+  <pre><code>{ "ok": true }</code></pre>
+  <table>
+    <tr>
+      <th>Request</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>Gets the db. Returns <code>{ "ok": true, "data": &lt;data&gt; }</code></td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>Sets the db to the body of the request. The request must have the header <code>Content-Type</code> set to <code>application/json</code>.</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>Deletes a key from the db. If you do not specify a path (e.g. <code>&lt;token&gt;/key</code>), the whole database will be emptied!</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>An alias of the <code>POST</code> request.</td>
+    </tr>
+  </table>
+  <p>If an error occurs, all methods return <code>{ "ok": false, "error": &lt;error&gt; }</code> instead.</p>
+  <h2>JS example</h2>
+  <p>Here is a simple example demonstrating all the capabilites.</p>
+  <pre><code>// you can change the URL.
+const URL = "jsonstore2.io/insert-hash-here";
+
+(() => {
+  async function getDb() {
+    return await fetch(URL, {
+      method: "GET"
+    }).then(n => n.text());
+  }
+
+  console.log("Database Data:", await getDb());
+
+  await fetch(URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: { "a": 5, "e": 6 }
+  });
+
+  console.log("Database Data:", await getDb());
+
+  // This is equivalent to { "b": { "c": { "nest": 5 } } }
+  await fetch(URL + "/b/c", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: { "nest": 5 }
+  });
+
+  console.log("Database Data:", await getDb());
+
+  await fetch(URL + "/e", {
+    method: "DELETE"
+  });
+
+  console.log("Database Data:", await getDb());
+})();
+  </code></pre>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>

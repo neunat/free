@@ -1,0 +1,29 @@
+{% extends "userbar.html" %}
+{% block content %}
+  <h2>Account</h2>
+  <hr style="background-color:#00a9e2;width:75%;height:5px;border-radius:5px;opacity:1;border:hidden;">
+  <form method="post">
+    <h4>Bio</h4>
+    <textarea style="height:150px;" class="form-control me-2" name="bio" placeholder="Bio"></textarea>
+    <br>
+    <h4>Profile Pic</h4>
+    <input class="form-control me-2" name="pfp" placeholder="Image URL">
+    <br>
+    <h4>Recieve email notifications</h4>
+    <label class="switch">
+      <input type="checkbox" name="switch" checked>
+      <span class="slider round"></span>
+    </label>
+    <br>
+    <br>
+    <h4>Change password</h4>
+    <input class="form-control me-2" name="old_password" placeholder="Old password" type="password">
+    <input class="form-control me-2" name="new_password" placeholder="New password" type="password">
+    <br>
+    {% if problem == "password" %}
+    <p style="color:red;">{{prompt}}</p>
+    <br>
+    {% endif %}
+    <button class="btn btn-primary" type="submit">Update profile and settings</button>
+  </form>
+{% endblock %}

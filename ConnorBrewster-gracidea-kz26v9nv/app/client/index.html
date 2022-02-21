@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracidea | Pokémon Live Map</title>
+  <meta name="author" content="lowlighter">
+  <meta name="description" content="Gracidea, a Pokémon live map">
+  <meta property="og:image" content="/opengraph.png">
+  <link rel="icon" href="/favicon.ico">
+  <style>body{background-color:#182850;}.loader,nav{display: none;}</style>
+</head>
+<body>
+  <div class="loader">
+    <img src="/hello.png" alt="">
+    Gracidea is loading
+    <div class="loaded"></div>
+  </div>
+  <nav class="collapsed">
+    <div class="app-name">
+      <img src="/icons/gracidea.png" alt="🌺">
+      <span>Gracidea <sub id="sha">{{sha}}</sub></span>
+    </div>
+    <!--
+    <a href="#" id="share">
+      <img src="/icons/share.png" alt="💌"> Share position
+    </a>
+    -->
+    <details>
+      <summary><img src="/icons/map.png" alt="🗺️">World map</summary>
+      <span style="font-style: italic;">(Coming soon)</span>
+    </details>
+    <details>
+      <summary><img src="/icons/debug.png" alt="⚙️">Debug</summary>
+      <div class="debug"></div>
+    </details>
+    <details>
+      <summary><img src="/icons/patches.png" alt="🗂️">Patches</summary>
+      <div class="patches"></div>
+    </details>
+    <details>
+      <summary><img src="/icons/pokedoll.png" alt="🦑">Repository</summary>
+      <a href="https://github.com/lowlighter/gracidea" target="_blank">GitHub</a>
+      <a href="https://github.com/lowlighter/gracidea/issues/new?template=issue_report.yml" target="_blank">Report an issue</a>
+      <a href="https://github.com/lowlighter/gracidea/discussions" target="_blank">Start a discussion</a>
+      <a href="https://github.com/lowlighter/gracidea/blob/main/CONTRIBUTING.md" target="_blank">Contribute</a>
+      <a href="https://github.com/lowlighter/gracidea/blob/main/LICENSE" target="_blank">License</a>
+    </details>
+  </nav>
+  <script src="/js/loader.js"></script>
+</body>
+</html>

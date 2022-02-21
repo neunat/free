@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Medium.ttf);
+}
+
+body {
+  background-color: #67548c;
+}
+
+h1{
+  font-family: Poppins;
+  text-align: center;
+  color: #F0D265;
+
+}
+
+h2{
+  font-family: Poppins;
+}
+
+h3{
+  font-family: Poppins;
+}
+
+p{
+  font-family: Poppins;
+  color: #ffffff;
+}
+
+.se{
+  text-align: center;
+
+}
+
+#search{
+  width: 90%;
+  height: 2.5em;
+  padding:8px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+  color: EDF2F4;
+  float:center;
+
+}
+
+#livesearch{
+  font-family: Poppins;
+}
+
+#results{
+  color: 302A50;
+  text-decoration: none;
+  width: 100%;
+  padding-left: 2%;
+  float: left;
+  background-color: F0D265;
+  font-size: 1.5em;
+  font-family: Poppins;
+}
+
+
+a:link, a:visited {
+  color: aliceblue;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottomLinks {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  width: 75%;
+  margin: auto;
+  padding: 5px;
+
+}
+
+.aboutP {
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  position: ablosulte;
+
+}

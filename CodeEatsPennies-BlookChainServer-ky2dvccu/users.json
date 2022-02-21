@@ -1,0 +1,5 @@
+{"Accounts":[
+  { "username":"bob", "number":"1" , "amount": 50, "pubkey": "keys/1-bob-public.pem"},
+  { "username":"Alice", "number":"2", "amount": 10, "pubkey": "keys/2-Alice-public.pem" },
+  { "username":"Peter", "number":"3", "amount": 18, "pubkey": "keys/3-Peter-public.pem" }
+]}

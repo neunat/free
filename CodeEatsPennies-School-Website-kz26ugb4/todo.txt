@@ -1,0 +1,40 @@
+make sure development php server is safe
+
+Make sure database is safe
+
+Add 404 page
+
+3d printed tactile maps?
+
+Make it easily downloadable (internet at school is iffy) 
+
+offline pwa
+
+2d map 
+
+hallway names
+
+A way to show a path through the school to a selected room(Pathfinding Algorithim)
+
+add where you can get food for lunch- lunch menus?
+
+Find a way to hide the database from searching  https://school-website.codeeatspennies.repl.co/database.xml, if no way, just rename to something like hsdkvvyuvfkuyvskducyzskudyvkuyzskuyekuzysekdjgvbkzshgdzv.xml
+
+Add a base image of school (map), on every room page load that base image and load an image map overlay to find a path there
+
+Ask where the user is in the school, set a cookie, ask when finding a route to somewhere in the school, draw path from place they set to room they want to go to
+
+Talk to admininstration, host a volunteering oppurtunity for Spanish, German, French, and Chinese students to translate website content (mainly Spanish)
+
+Make a Teacher and Room page
+
+Have admin page to make a database, when database file uploaded give a summary of what will hapen, (ie: 
+teacher page: john doe will be deleted
+room page: 7832 will be added
+) for all changes, ask for password again. Admin page will just replace the database and create html pages. (also warn of pages that need content because they're new, provide future maintainers with a template for teacher and room pages)
+
+Make a privacy policy (terms of service?)
+
+On teacher pages, make it say mr or mrs teacher instead of full name
+
+Add a low-internet page, map is loaded statically, search doesen't work

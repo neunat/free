@@ -1,0 +1,56 @@
+{% if logged_in == 'true' %}
+{% extends "userbar.html" %}
+{% else %}
+{% extends "base.html" %}
+{% endif %}
+{% block content %}
+  <div class="profile">
+    <br>
+    <h2><a href="/">@{{user}}</h2></a>
+    <hr>
+    <h5>{{followers_length}} followers</h5>
+    <h5>{{friends_length}} friends</h5>
+    <hr>
+    {% if verified == 'true' %}
+    <div class="verified"><b>✓</b></div>
+    {% endif %}
+    <img src="{{pfp}}" width="150" height="150" alt="pic" style="border-radius:50%;"></img>
+    <br>
+    <br>
+    {% if bio == "" %}
+    <h5>Bio is empty</h5>
+    {% else %}
+    <h5 style="max-height:400px;">{{bio}}</h5>
+    {% endif %}
+    <p><b>Last seen</b> at {{last_seen}} UTC</p>
+    <hr>
+    {% for role in roles %}
+    {% if role == "admin" %}
+    <div class="admin" style="display:block;margin-bottom:8px;">{{role}}</div>
+    {% elif role == "moderator" %}
+    <div class="moderator" style="display:block;margin-bottom:8px;">{{role}}</div>
+    {% else %}
+    <div class="user" style="display:block;margin-bottom:8px;">{{role}}</div>
+    {% endif %}
+    {% endfor %}
+    <hr>
+    {% if is_following == 'true' and is_friends == 'true' %}
+    <h6>
+      <a href="/unfollow/@{{user}}">Unfollow</a> | <a href="/unfriend/@{{user}}">Unfriend</a>
+    </h6>
+    {% elif is_following == 'false' and is_friends == 'true' %}
+    <h6>
+      <a href="/follow/@{{user}}">Follow</a> | <a href="/unfriend/@{{user}}">Unfriend</a>
+    </h6>
+    {% elif is_following == 'true' and is_friends == 'false' %}
+    <h6>
+      <a href="/unfollow/@{{user}}">Unfollow</a> | <a href="/friend/@{{user}}">Friend</a>
+    </h6>
+    {% else %}
+    <h6>
+      <a href="/follow/@{{user}}">Follow</a> | <a href="/friend/@{{user}}">Friend</a>
+    </h6>
+    {% endif %}
+    <br>
+  </div>
+{% endblock %}

@@ -1,0 +1,182 @@
+class StellaBotHelp(commands.DefaultHelpCommand):
+    def __init__(self, **options):
+        super().__init__(**options)
+        with open("d_json/help.json") as r:
+            self.help_gif = json.load(r)
+
+    def get_command_signature(self, command, ctx=None):
+        """Method to return a commands name and signature"""
+        if not ctx:
+            prefix = self.context.clean_prefix
+            if not command.signature and not command.parent:
+                return f'`{prefix}{command.name}`'
+            if command.signature and not command.parent:
+                return f'`{prefix}{command.name}` `{command.signature}`'
+            if not command.signature and command.parent:
+                return f'`{prefix}{command.parent}` `{command.name}`'
+            else:
+                return f'`{prefix}{command.parent}` `{command.name}` `{command.signature}`'
+        else:
+            def get_invoke_with():
+                msg = ctx.message.content
+                prefixmax = re.match(f'{re.escape(ctx.prefix)}', ctx.message.content).regs[0][1]
+                return msg[prefixmax:msg.rindex(ctx.invoked_with)]
+
+            if not command.signature and not command.parent:
+                return f'{ctx.prefix}{ctx.invoked_with}'
+            if command.signature and not command.parent:
+                return f'{ctx.prefix}{ctx.invoked_with} {command.signature}'
+            if not command.signature and command.parent:
+                return f'{ctx.prefix}{get_invoke_with()}{ctx.invoked_with}'
+            else:
+                return f'{ctx.prefix}{get_invoke_with()}{ctx.invoked_with} {command.signature}'
+
+    def get_help(self, command, brief=True):
+        """Gets the command short_doc if brief is True while getting the longer help if it is false"""
+        real_help = command.help or "This command is not documented."
+        return real_help if not brief else command.short_doc or real_help
+
+    def get_demo(self, command):
+        """Gets the gif demonstrating the command."""
+        com = command.name
+        if com not in self.help_gif:
+            return ""
+        return f"{self.context.bot.help_src}/{self.help_gif[com]}/{com}_help.gif"
+
+    def get_aliases(self, command):
+        """This isn't even needed jesus christ"""
+        return command.aliases
+
+    def get_old_flag_help(self, command):
+        """Gets the flag help if there is any."""
+        def c(x):
+            return "_OPTIONAL" not in x.dest
+        return ["**--{0.dest} |** {0.help}".format(action) for action in command.callback._def_parser._actions if c(action)]
+
+    def get_flag_help(self, command):
+        required_flags = []
+        optional_flags = []
+        if (param := flg.find_flag(command)):
+            for name, flags in param.annotation.__commands_flags__.items():
+                not_documented = "This flag is not documented."
+                description = getattr(flags, "help", not_documented) or not_documented
+                formatted = f"**{':** | **'.join(itertools.chain([name], flags.aliases))}:** **|** {description}"
+                list_append = (required_flags, optional_flags)[command._is_typing_optional(flags.annotation)]
+                list_append.append(formatted)
+        return required_flags, optional_flags
+
+    async def send_bot_help(self, mapping):
+        """Gets called when `uwu help` is invoked"""
+        def get_command_help(com):
+            signature = self.get_command_signature(com)
+            desc = self.get_help(com)
+            return CommandHelp(signature, desc, com)
+
+        def get_cog_help(cog, cog_commands):
+            cog_name_none = getattr(cog, "qualified_name", None)
+            cog_name = cog_name_none or "No Category"
+            cog_description = getattr(cog, 'description', "Not documented")
+            cog_emoji = emoji_dict.get(cog_name_none) or emoji_dict[None]
+            cog_amount = len([*unpack(cog_commands)])
+            return CogHelp(cog_name, cog_amount, cog_emoji, cog_description)
+
+        ctx = self.context
+        bot = ctx.bot
+        EACH_PAGE = 4
+        command_data = {}
+        for cog, unfiltered_commands in mapping.items():
+            if list_commands := await self.filter_commands(unfiltered_commands, sort=True):
+                lists = command_data.setdefault(cog, [])
+                for chunks in more_itertools.chunked(list_commands, EACH_PAGE):
+                    lists.append([*map(get_command_help, chunks)])
+
+        sort_cog = [*itertools.starmap(get_cog_help, command_data.items())]
+        sort_cog.sort(key=lambda c: c.commands, reverse=True)
+        cog_names = [dict(selected=ch.name, emoji=ch.emoji) for ch in sort_cog]
+        fields = (("{0.emoji} {0.name} [`{0.commands}`]".format(ch), ch.description) for ch in sort_cog)
+        stella = bot.stella
+        embed = BaseEmbed.default(ctx,
+            title=f"{home_emoji} Help Command", 
+            description=f"{bot.description.format(stella)}\n\n**Select a Category:**",
+            fields=fields
+        )
+        embed.set_thumbnail(url=bot.user.avatar)
+        embed.set_author(name=f"By {stella}", icon_url=stella.avatar)
+        loads = {
+            "style": discord.ButtonStyle.primary,
+            "button": HelpButton,
+            "mapper": command_data,
+            "menu": HelpMenu
+        }
+        cog_names = [*more_itertools.chunked(cog_names, 5)]
+        args = [embed, self, ctx, HelpSource, *cog_names]
+        menu_view = HelpMenuView(*args, **loads)
+        await ctx.reply(embed=embed, view=menu_view)
+
+    def get_command_help(self, command):
+        """Returns an Embed version of the command object given."""
+        embed = BaseEmbed.default(self.context)
+        embed.title = self.get_command_signature(command)
+        embed.description = self.get_help(command, brief=False)
+        if demo := self.get_demo(command):
+            embed.set_image(url=demo)
+        if alias := self.get_aliases(command):
+            embed.add_field(name="Aliases", value=f'[{" | ".join(f"`{x}`" for x in alias)}]', inline=False)
+        
+        required_flags, optional_flags = self.get_flag_help(command)
+        if hasattr(command.callback, "_def_parser"):
+            optional_flags.extend(self.get_old_flag_help(command))
+
+        if required_flags:
+            embed.add_field(name="Required Flags", value="\n".join(required_flags), inline=False)
+
+        if optional_flags:
+            embed.add_field(name="Optional Flags", value="\n".join(optional_flags), inline=False)
+    
+        if isinstance(command, commands.Group):
+            subcommand = command.commands
+            value = "\n".join(self.get_command_signature(c) for c in subcommand)
+            embed.add_field(name=plural("Subcommand(s)", len(subcommand)), value=value)
+
+        return embed
+
+    async def handle_help(self, command):
+        with contextlib.suppress(commands.CommandError):
+            await command.can_run(self.context)
+            return await self.context.reply(embed=self.get_command_help(command), mention_author=False)
+        raise CantRun("You don't have enough permission to see this help.") from None
+
+    async def send_command_help(self, command):
+        """Gets invoke when `uwu help <command>` is invoked."""
+        await self.handle_help(command)
+
+    async def send_group_help(self, group):
+        """Gets invoke when `uwu help <group>` is invoked."""
+        await self.handle_help(group)
+
+    async def send_cog_help(self, cog):
+        """Gets invoke when `uwu help <cog>` is invoked."""
+        cog_commands = [self.get_command_help(c) for c in await self.filter_commands(cog.walk_commands(), sort=True)]
+        pages = CogMenu(source=empty_page_format(cog_commands))
+        with contextlib.suppress(discord.NotFound, discord.Forbidden):
+            await pages.start(self.context, wait=True)
+            await self.context.confirmed()
+
+    async def command_callback(self, ctx, search: typing.Optional[typing.Literal['search', 'select']], *, command=None):
+        if search:
+            bot = ctx.bot
+            if command is not None:
+                iterator = filter(lambda x: x[1] > 50, process.extract(command, [x.name for x in bot.commands], limit=5))
+                result = [*more_itertools.chunked(map(lambda x: x[0], iterator), 2)]
+                if result:
+                    button_view = HelpSearchView(self, *result, button=HelpSearchButton, style=discord.ButtonStyle.secondary)
+                    await ctx.send("**Searched Command:**", view=button_view, delete_after=180)
+                else:
+                    await self.send_error_message(f'Unable to find any command that is even close to "{command}"')
+            else:
+                param = bot.get_command('help').params['command']
+                ctx.current_parameter = param
+                raise commands.MissingRequiredArgument(param)
+
+        else:
+            return await super().command_callback(ctx, command=command)

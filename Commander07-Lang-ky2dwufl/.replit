@@ -1,0 +1,3 @@
+run="python lang.py test.lang && ./dist/test"
+language="lang"
+onBoot="python lang.py --shell"

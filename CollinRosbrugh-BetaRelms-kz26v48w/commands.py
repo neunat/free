@@ -1,0 +1,36 @@
+# add stuff here later? or maybe keep commands inside main?
+
+def commandList():
+  print("------------------------------ Command List ------------------------------")
+  prRed("/                          - Repeats your last command exactly.")
+  prRed("experience                 - Shows your experience statistics")
+  print(" help                       - Shows this menu")
+  prRed("inventory                  - Shows a list of your items")
+  print(" quit                       - Allows you to leave the realm.")
+  prRed("remove <'weapon'/'armor'>  - removes your weapon or armor")
+  prRed("stats                      - Shows all of your statistics")
+  prRed("quests                     - Shows your achieved quests")
+  prRed("time                       - shows the current system time.")
+  prRed("use <item>                 - use an item in your inventory")
+  prRed("whisper <who> <msg>        - Sends message to one person")
+  print(" look                       - Displays the coordinates of the current room.")
+  print(" north/east/south/west      - Moves in a direction")
+  prRed("run <pattern>              - Run to some location. eg: run 3w1s")
+  prRed("get/drop <item>            - Picks up or drops an item on the ground")
+  prRed("train                      - Train to the next level (TR)")
+  prRed("editstats                  - Edit your statistics (TR)")
+  prRed("list                       - Lists items in a store (ST)")
+  prRed("buy/sell <item>            - Buy or Sell an item in a store (ST)")
+  print(" attack/a                   - Attack an enemy or a player")
+  print("--------------------------------------------------------------------------")
+
+##############################################################
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk)) 
+def prGreen(skk): print("\033[92m {}\033[00m" .format(skk)) 
+def prYellow(skk): print("\033[93m {}\033[00m" .format(skk)) 
+def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk)) 
+def prPurple(skk): print("\033[95m {}\033[00m" .format(skk)) 
+def prCyan(skk): print("\033[96m {}\033[00m" .format(skk)) 
+def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk)) 
+def prBlack(skk): print("\033[98m {}\033[00m" .format(skk)) 
+##############################################################

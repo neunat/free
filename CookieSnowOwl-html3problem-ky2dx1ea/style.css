@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  text-align: center;
+  height: 15%;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+
+#home {
+  text-decoration: none;
+  color: white;
+}
+#home:hover {
+  text-decoration: underline;
+}
+#bigbutton, #lorem_ipsum_text {
+  height: 85%;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  z-index: 2;
+}
+#bigbutton {
+  font-size: 1000%;
+}
+#bigbutton:hover {
+  cursor: pointer;
+}
+.in_background{
+	opacity: 0.4;
+	z-index: 1 !important;
+}

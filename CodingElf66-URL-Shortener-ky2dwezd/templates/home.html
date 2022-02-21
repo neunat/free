@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>URL Shortener</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="/static/img/favicon.png/"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	crossorigin="anonymous"/>
+  </head>
+  <body>
+    <center>
+      <br>
+      <h2>URL Shortener</h2>
+      <hr style="color:blue; height:5px; border-radius:5px; width:600px;">
+      <p>URL Shortener is a good and easy website that allows you to easily change and shorten URLs, coded in the Flask framework.</p>
+      <p>This program inputs the URL, then generates a random 6 digit code.</p>
+      <form method="post">
+        <input style="width:500px;" class="form-control me-2" name="url" placeholder="URL" required>
+        <br>
+        <button class="btn btn-outline-primary" type="submit">Generate new URL</button>
+      </form>
+      {% if done == 'true' %}
+      <br>
+      <p class="url"><a href="{{url}}">{{url}}</a></p><button class="btn btn-outline-primary btn-sm" id="copybutton" nclick="navigator.clipboard.writeText('{{url}}')">Copy new URL</button>
+      {% endif %}
+    </center>
+  </body>
+</html>

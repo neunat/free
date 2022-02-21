@@ -1,0 +1,51 @@
+* {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  background-image: url('/static/img/confetti.gif');
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background: linear-gradient(-45deg, orange, darkorange, #e0cc19);
+  border: solid;
+  border-width: 2px;
+  border-color: #4b4b4b;
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px orangered;
+  position: absolute;
+}
+
+.special {
+  background: -webkit-linear-gradient(0deg, red, #c98507, #d8d807, #14be55, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.divider {
+  background-color: #4b4b4b;
+  width: 2px;
+  height: 604px;
+  transform: translate(500px,-183px);
+  position: absolute;
+}
+
+.month {
+  background: -webkit-linear-gradient(0deg, #b34709, #ce530c, #ec6517);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

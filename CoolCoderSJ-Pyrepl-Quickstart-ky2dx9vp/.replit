@@ -1,0 +1,10 @@
+#Since google-nucleus has a few build issues on linux, 
+#a few pip commands are required,
+#so use bash
+run="bash main.sh"
+
+#Stop UPM from interfering
+[packager]
+  [packager.features]
+  packageSearch = false
+  guessImports = false

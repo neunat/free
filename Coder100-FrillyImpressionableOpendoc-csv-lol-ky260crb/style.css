@@ -1,0 +1,89 @@
+:root {
+    --part1: #9999cc;
+    --part2: #ffff66;
+}
+
+body {
+    background: #0f0f23;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    color: #ccc;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex div {
+    margin: 10px;
+}
+
+.part1 {
+    color: var(--part1);
+}
+
+.part2 {
+    color: var(--part2);
+}
+
+em {
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+p {
+    margin: 0;
+    padding: 15px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+.all-cont, .ind-cont {
+    width: 800px;
+    display: inline-block;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding: 5px;
+}
+
+nav button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+
+    font-family: 'Source Code Pro', monospace;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 4px;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    color: white;
+}
+
+nav button:hover, nav button.curr {
+    text-shadow: 0 0 5px #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.page {
+    animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
